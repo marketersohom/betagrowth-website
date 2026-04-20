@@ -297,7 +297,7 @@ export default function Home() {
               className="font-display text-cream italic leading-relaxed mb-8"
               style={{ fontSize: "clamp(1.4rem, 2.5vw, 2rem)" }}
             >
-              "The diagnostic alone paid for itself in the first month. What Sohom identified in pricing architecture was something we had completely missed despite three years in business."
+              &ldquo;The diagnostic alone paid for itself in the first month. What Sohom identified in pricing architecture was something we had completely missed despite three years in business.&rdquo;
             </blockquote>
             <div className="flex items-center justify-center gap-4">
               <div className="w-10 h-px bg-gold" />

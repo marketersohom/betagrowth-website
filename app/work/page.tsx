@@ -156,7 +156,7 @@ export default function WorkPage() {
           <ScrollReveal className="mt-16 border-t border-gold/10 pt-12">
             <div className="max-w-2xl">
               <blockquote className="font-display text-cream italic text-xl lg:text-2xl font-light leading-relaxed mb-6">
-                "The diagnostic alone paid for itself in the first month. What Sohom identified in pricing architecture was something we had completely missed despite three years in business."
+                &ldquo;The diagnostic alone paid for itself in the first month. What Sohom identified in pricing architecture was something we had completely missed despite three years in business.&rdquo;
               </blockquote>
               <div className="flex items-center gap-4">
                 <div className="w-8 h-px bg-gold" />
@@ -244,10 +244,10 @@ export default function WorkPage() {
             <ScrollReveal>
               <h3 className="font-display text-cream text-2xl font-light mb-4">The positioning problem</h3>
               <p className="font-body text-cream/55 text-sm leading-relaxed mb-4">
-                Tony's existing positioning described what he did — executive coaching — rather than the specific outcome he reliably produced. This is extremely common in professional services. It means he competed on price with coaches who were less experienced rather than commanding a premium for specific, documented outcomes.
+                Tony&apos;s existing positioning described what he did — executive coaching — rather than the specific outcome he reliably produced. This is extremely common in professional services. It means he competed on price with coaches who were less experienced rather than commanding a premium for specific, documented outcomes.
               </p>
               <p className="font-body text-cream/55 text-sm leading-relaxed">
-                The diagnostic identified three specific case studies where his coaching had directly contributed to a client's business expansion. None of these were visible in his public positioning.
+                The diagnostic identified three specific case studies where his coaching had directly contributed to a client&apos;s business expansion. None of these were visible in his public positioning.
               </p>
             </ScrollReveal>
 
