@@ -3,21 +3,108 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --plum: #1a0520;
+  --plum-deep: #0d0112;
+  --plum-mid: #2a0d35;
+  --gold: #c9a84c;
+  --gold-light: #e2c97e;
+  --cream: #f0ebe2;
+  --cream-muted: #c8c0b0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  cursor: none;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1a0520;
+  color: #f0ebe2;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+* {
+  cursor: none;
+}
+
+a, button, [role="button"], input, textarea, select, label {
+  cursor: none;
+}
+
+/* Selection */
+::selection {
+  background: #c9a84c33;
+  color: #f0ebe2;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0112;
+}
+::-webkit-scrollbar-thumb {
+  background: #c9a84c55;
+  border-radius: 2px;
+}
+
+/* Typography */
+.font-display {
+  font-family: var(--font-cormorant), Georgia, serif;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-weight: 300;
+}
+
+/* Gold line utility */
+.gold-line {
+  height: 1px;
+  background: linear-gradient(90deg, #c9a84c, transparent);
+}
+
+/* Grain overlay */
+.grain::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  opacity: 0.035;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Ticker animation */
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-ticker {
+  animation: ticker 40s linear infinite;
+}
+
+/* Nav link hover */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #c9a84c;
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
 }
 
 @layer utilities {
