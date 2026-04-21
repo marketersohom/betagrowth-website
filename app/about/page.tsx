@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import ScrollReveal from "@/components/ScrollReveal";
 
@@ -89,16 +90,20 @@ export default function AboutPage() {
       <section className="border-t border-gold/10">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-24 lg:py-28">
           <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-start">
-            {/* Photo placeholder */}
+            {/* Photo */}
             <ScrollReveal className="lg:col-span-4">
               <div className="relative">
-                <div className="aspect-[3/4] bg-plum-mid/40 border border-gold/15 flex items-end p-6 overflow-hidden">
-                  {/* Abstract portrait placeholder */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-32 h-32 rounded-full bg-gold/10 border border-gold/20" />
-                    <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-plum-deep/60 to-transparent" />
-                  </div>
-                  <div className="relative z-10">
+                <div className="aspect-[3/4] relative overflow-hidden border border-gold/15">
+                  <Image
+                    src="/portrait_about.jpg"
+                    alt="Sohom Mukherjee, Founder of Generation Beta"
+                    fill
+                    className="object-cover object-top"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    priority
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-plum-deep/70 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6 z-10">
                     <p className="font-display text-cream text-2xl font-light">Sohom Mukherjee</p>
                     <p className="font-body text-gold text-xs tracking-[0.15em] uppercase mt-1">Founder</p>
                   </div>
