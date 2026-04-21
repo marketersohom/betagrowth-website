@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
+import Logo from "@/components/Logo";
 
 const links = [
   { href: "/", label: "Home" },
@@ -41,21 +42,8 @@ export default function Nav() {
     >
       <nav className="max-w-7xl mx-auto px-6 lg:px-12 h-16 lg:h-20 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-7 h-7 relative">
-            <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M14 2L26 8V20L14 26L2 20V8L14 2Z" stroke="#c9a84c" strokeWidth="1.5" fill="none"/>
-              <path d="M14 8L20 11V17L14 20L8 17V11L14 8Z" fill="#c9a84c" opacity="0.4"/>
-            </svg>
-          </div>
-          <div className="flex flex-col leading-none">
-            <span className="font-display text-cream text-lg font-medium tracking-wide">
-              Generation Beta
-            </span>
-            <span className="text-gold text-[10px] font-body tracking-[0.15em] uppercase">
-              Growth Partners
-            </span>
-          </div>
+        <Link href="/" aria-label="Generation Beta — Home">
+          <Logo width={140} />
         </Link>
 
         {/* Desktop Links */}
