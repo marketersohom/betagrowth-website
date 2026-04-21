@@ -48,14 +48,6 @@ export default function WorkPage() {
           <em className="text-gold not-italic">Real numbers.</em>
         </motion.h1>
 
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="font-body text-cream/60 text-lg leading-relaxed max-w-2xl"
-        >
-          Two engagements. Real numbers. No agency language.
-        </motion.p>
       </section>
 
       {/* Amla Spa Group */}
@@ -75,7 +67,7 @@ export default function WorkPage() {
                 Amla Spa Group
               </h2>
               <div className="flex flex-wrap gap-2 mb-6">
-                {["Wellness & Spa", "Bangkok", "Revenue Architecture", "Operations"].map((tag) => (
+                {["Wellness & Spa", "Thailand", "Revenue Architecture", "Operations"].map((tag) => (
                   <span key={tag} className="font-body text-xs text-cream/40 border border-cream/10 px-3 py-1">
                     {tag}
                   </span>
@@ -244,7 +236,7 @@ export default function WorkPage() {
             <ScrollReveal>
               <h3 className="font-display text-cream text-2xl font-light mb-4">The positioning problem</h3>
               <p className="font-body text-cream/55 text-sm leading-relaxed mb-4">
-                Tony&apos;s existing positioning described what he did — executive coaching — rather than the specific outcome he reliably produced. This is extremely common in professional services. It means he competed on price with coaches who were less experienced rather than commanding a premium for specific, documented outcomes.
+                Tony&apos;s existing positioning described what he did, executive coaching, rather than the specific outcome he reliably produced. This is extremely common in professional services. It means he competed on price with coaches who were less experienced, rather than commanding a premium for specific, documented outcomes.
               </p>
               <p className="font-body text-cream/55 text-sm leading-relaxed">
                 The diagnostic identified three specific case studies where his coaching had directly contributed to a client&apos;s business expansion. None of these were visible in his public positioning.
@@ -257,7 +249,7 @@ export default function WorkPage() {
                 We rebuilt his offer architecture around a specific, deliverable outcome rather than a service description. His book, which had been a personal project, was repositioned as a lead generation and authority mechanism. A structured pre-launch strategy produced 270 waitlist sign-ups before the manuscript was complete.
               </p>
               <p className="font-body text-cream/55 text-sm leading-relaxed">
-                The revised positioning opened three investor conversations for a coaching platform he had been developing — an asset that had been invisible under his previous positioning.
+                The revised positioning opened three investor conversations for a coaching platform he had been developing, an asset that had been invisible under his previous positioning.
               </p>
             </ScrollReveal>
           </div>

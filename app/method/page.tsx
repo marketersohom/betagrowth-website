@@ -10,7 +10,7 @@ const phases = [
     number: "01",
     title: "Revenue Diagnostic",
     duration: "15 days",
-    tagline: "Find the leaks before you fix anything.",
+    tagline: "A 15-day audit of your full revenue system. We find where money is being lost before recommending anything.",
     description: "The Diagnostic is the foundation of everything. We do not guess at problems or rely on your instincts about where revenue is lost. We audit 12 specific areas systematically, interview stakeholders, and examine your data. The output is a specific, ranked list of revenue gaps.",
     deliverables: [
       "Revenue Leak Report (30 to 50 pages)",
@@ -41,7 +41,7 @@ const phases = [
     number: "02",
     title: "System Architecture",
     duration: "4 to 6 weeks",
-    tagline: "Design the revenue engine, not just the fix.",
+    tagline: "We design and build the growth infrastructure your business needs: positioning, funnels, operations, and client experience.",
     description: "Once the diagnostic is complete, we design the full revenue system your business should be running. This is not a patch on existing problems. It is an architectural redesign of how revenue flows through your business: pricing models, channel strategy, conversion infrastructure, partnership frameworks.",
     deliverables: [
       "Revenue System Blueprint",
@@ -72,7 +72,7 @@ const phases = [
     number: "03",
     title: "Execution & Integration",
     duration: "3 to 6 months",
-    tagline: "Installed, tested, and running before we leave.",
+    tagline: "We stay embedded until the system is running, tested, and producing measurable results.",
     description: "Architecture without execution is a document. In Phase 3 we work directly with your team to install the systems we have designed. We track metrics weekly, iterate based on real data, and do not disengage until the numbers are moving in the right direction.",
     deliverables: [
       "Weekly metric tracking sessions",

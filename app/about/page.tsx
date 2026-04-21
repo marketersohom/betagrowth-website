@@ -8,19 +8,19 @@ import ScrollReveal from "@/components/ScrollReveal";
 const sectors = [
   {
     name: "Hospitality",
-    description: "Hotels, resorts, boutique properties. Revenue architecture, pricing, channel mix, and partnership programs.",
+    description: "Hotels, resorts, and boutique properties across Southeast Asia. Revenue architecture, pricing strategy, and partnership development.",
   },
   {
     name: "Wellness & Spa",
-    description: "Day spas, wellness centers, therapeutic practices. Pricing structure, booking systems, corporate partnerships.",
+    description: "Day spas, wellness centers, and therapeutic practices. Booking systems, pricing structure, and client retention.",
   },
   {
     name: "Professional Services",
-    description: "Coaches, consultants, advisors. Offer architecture, positioning, authority building, and client acquisition systems.",
+    description: "Consultants, coaches, and advisors building authority-based practices. Positioning, offer architecture, and client acquisition.",
   },
   {
     name: "F&B",
-    description: "Independent restaurants and beverage brands. Revenue per cover, private dining, event revenue, brand positioning.",
+    description: "Independent restaurants and beverage brands. Revenue per cover, private dining, event revenue, and brand positioning.",
   },
 ];
 
@@ -147,12 +147,19 @@ export default function AboutPage() {
                   <p className="font-body text-sm text-cream/70">Bangkok, Thailand</p>
                 </div>
                 <div>
-                  <p className="font-body text-xs text-gold tracking-[0.15em] uppercase mb-1">Focus</p>
-                  <p className="font-body text-sm text-cream/70">SEA + South Asia</p>
-                </div>
-                <div>
                   <p className="font-body text-xs text-gold tracking-[0.15em] uppercase mb-1">Languages</p>
                   <p className="font-body text-sm text-cream/70">English, Bengali, Hindi</p>
+                </div>
+                <div>
+                  <p className="font-body text-xs text-gold tracking-[0.15em] uppercase mb-1">LinkedIn</p>
+                  <a
+                    href="https://linkedin.com/in/sohommukherjee"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-body text-sm text-cream/70 hover:text-gold transition-colors duration-200"
+                  >
+                    linkedin.com/in/sohommukherjee
+                  </a>
                 </div>
               </div>
             </ScrollReveal>
@@ -205,7 +212,7 @@ export default function AboutPage() {
               className="font-display text-cream leading-[1.05]"
               style={{ fontSize: "clamp(2rem, 4vw, 3.2rem)" }}
             >
-              Four principles. No exceptions.
+              Four principles that govern every engagement.
             </h2>
           </ScrollReveal>
 
