@@ -105,19 +105,6 @@ export default function ContactPage() {
                       sohom@betagrowthpartners.com
                     </span>
                   </a>
-                  <a
-                    href="tel:+66807104138"
-                    className="flex items-start gap-3 group"
-                  >
-                    <div className="w-5 h-5 flex-shrink-0 mt-0.5 opacity-50 group-hover:opacity-100 transition-opacity">
-                      <svg viewBox="0 0 20 20" fill="none">
-                        <path d="M5.5 3C5.5 3 4 3 3 4.5C2 6 2.5 7.5 3.5 9C4.5 10.5 8 14.5 10.5 16.5C12.5 18 14.5 17.5 15.5 16.5L17 14.5C17.5 13.5 17 12.5 16 12L14.5 11C13.5 10.5 12.5 11 12 11.5L11 12.5C11 12.5 9 11.5 7.5 9C6 7 6.5 5.5 6.5 5.5L7.5 4.5C8 4 7.5 3 7.5 3H5.5Z" stroke="#c9a84c" strokeWidth="1.2" strokeLinejoin="round"/>
-                      </svg>
-                    </div>
-                    <span className="font-body text-sm text-cream/70 group-hover:text-cream transition-colors duration-200">
-                      +66 80 710 4138
-                    </span>
-                  </a>
                 </div>
               </div>
 

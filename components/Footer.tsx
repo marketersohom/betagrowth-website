@@ -14,7 +14,6 @@ const footerLinks = {
   Connect: [
     { href: "/contact", label: "Contact" },
     { href: "mailto:sohom@betagrowthpartners.com", label: "sohom@betagrowthpartners.com" },
-    { href: "tel:+66807104138", label: "+66 80 710 4138" },
   ],
 };
 
