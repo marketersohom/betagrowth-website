@@ -148,13 +148,13 @@ export default function WorkPage() {
           <ScrollReveal className="mt-16 border-t border-gold/10 pt-12">
             <div className="max-w-2xl">
               <blockquote className="font-display text-cream italic text-xl lg:text-2xl font-light leading-relaxed mb-6">
-                &ldquo;The diagnostic alone paid for itself in the first month. What Sohom identified in pricing architecture was something we had completely missed despite three years in business.&rdquo;
+                &ldquo;Sohom has been our growth partner for over two years now. He&apos;s practically part of our internal team. Our monthly revenue has grown 46% in the first year.&rdquo;
               </blockquote>
               <div className="flex items-center gap-4">
                 <div className="w-8 h-px bg-gold" />
                 <div>
-                  <p className="font-body text-cream text-sm font-medium">Arunrung Sutherland</p>
-                  <p className="font-body text-cream/40 text-xs">Director, Amla Spa Group</p>
+                  <p className="font-body text-cream text-sm font-medium">Jim Sutherland</p>
+                  <p className="font-body text-cream/40 text-xs">Partner, Amla Spa Group</p>
                 </div>
               </div>
             </div>

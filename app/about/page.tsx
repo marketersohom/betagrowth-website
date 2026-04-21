@@ -153,12 +153,12 @@ export default function AboutPage() {
                 <div>
                   <p className="font-body text-xs text-gold tracking-[0.15em] uppercase mb-1">LinkedIn</p>
                   <a
-                    href="https://linkedin.com/in/sohommukherjee"
+                    href="https://linkedin.com/in/digitalsohom-mukherjee"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="font-body text-sm text-cream/70 hover:text-gold transition-colors duration-200"
                   >
-                    linkedin.com/in/sohommukherjee
+                    linkedin.com/in/digitalsohom-mukherjee
                   </a>
                 </div>
               </div>
