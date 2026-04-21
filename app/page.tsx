@@ -234,7 +234,7 @@ export default function Home() {
               className="font-display text-cream leading-[1.05]"
               style={{ fontSize: "clamp(2rem, 4vw, 3.2rem)" }}
             >
-              Three phases. Structured sequence. No shortcuts.
+              Three phases. Each one builds on the last.
             </h2>
           </ScrollReveal>
 
@@ -297,13 +297,13 @@ export default function Home() {
               className="font-display text-cream italic leading-relaxed mb-8"
               style={{ fontSize: "clamp(1.4rem, 2.5vw, 2rem)" }}
             >
-              &ldquo;The diagnostic alone paid for itself in the first month. What Sohom identified in pricing architecture was something we had completely missed despite three years in business.&rdquo;
+              &ldquo;Sohom has been our growth partner for over two years now. He&apos;s practically part of our internal team. Our monthly revenue has grown 46% in the first year.&rdquo;
             </blockquote>
             <div className="flex items-center justify-center gap-4">
               <div className="w-10 h-px bg-gold" />
               <div>
-                <p className="font-body text-cream text-sm font-medium">Arunrung Sutherland</p>
-                <p className="font-body text-cream/40 text-xs">Director, Amla Spa Group</p>
+                <p className="font-body text-cream text-sm font-medium">Jim Sutherland</p>
+                <p className="font-body text-cream/40 text-xs">Partner, Amla Spa Group</p>
               </div>
               <div className="w-10 h-px bg-gold" />
             </div>

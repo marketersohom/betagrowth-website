@@ -43,9 +43,9 @@ export default function WorkPage() {
           className="font-display text-cream leading-[0.95] tracking-tight mb-8"
           style={{ fontSize: "clamp(2.8rem, 6vw, 5.5rem)" }}
         >
-          Results, not
+          Two engagements.
           <br />
-          <em className="text-gold not-italic">presentations.</em>
+          <em className="text-gold not-italic">Real numbers.</em>
         </motion.h1>
 
         <motion.p
@@ -54,7 +54,7 @@ export default function WorkPage() {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="font-body text-cream/60 text-lg leading-relaxed max-w-2xl"
         >
-          Two engagements. Specific numbers. No generic case study language.
+          Two engagements. Real numbers. No agency language.
         </motion.p>
       </section>
 

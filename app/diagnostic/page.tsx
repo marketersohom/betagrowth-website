@@ -203,10 +203,10 @@ export default function DiagnosticPage() {
                 className="font-display text-cream leading-[1.05] mb-6"
                 style={{ fontSize: "clamp(2rem, 3.5vw, 2.8rem)" }}
               >
-                Built for operators, not investors.
+                The Diagnostic is built for founders who are actively running their business and want specific, data-backed answers about where revenue is being lost.
               </h2>
               <p className="font-body text-cream/60 leading-relaxed">
-                The Diagnostic is designed for business owners who are actively running their operations and want specific, data-backed answers. Not a strategy session. Not a framework. A thorough examination of your specific business.
+                Not a strategy session. Not a framework. A thorough examination of your specific business.
               </p>
             </ScrollReveal>
 
@@ -251,7 +251,7 @@ export default function DiagnosticPage() {
         <div className="relative max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-20 flex flex-col lg:flex-row items-center justify-between gap-8">
           <div>
             <h2 className="font-display text-plum-deep text-3xl lg:text-4xl font-light leading-tight mb-2">
-              Ready to find your leaks?
+              Start with the Diagnostic.
             </h2>
             <p className="font-body text-plum-deep/70 text-sm">
               $1,500. 15 days. One decision to make.
