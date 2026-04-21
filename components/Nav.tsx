@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
-import Logo from "@/components/Logo";
 
 const links = [
   { href: "/", label: "Home" },
@@ -43,7 +43,14 @@ export default function Nav() {
       <nav className="max-w-7xl mx-auto px-6 lg:px-12 h-16 lg:h-20 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" aria-label="Generation Beta — Home">
-          <Logo width={140} />
+          <Image
+            src="/logo.png"
+            alt="Generation Beta"
+            width={160}
+            height={52}
+            priority
+            className="w-[160px] h-auto"
+          />
         </Link>
 
         {/* Desktop Links */}
