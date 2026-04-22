@@ -14,11 +14,35 @@ export default function ContactPage() {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In production, wire to a form service
-    setSubmitted(true);
+    setSubmitting(true);
+    setError(false);
+    try {
+      const res = await fetch("https://formspree.io/f/xwvawloz", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          name: formState.name,
+          email: formState.email,
+          company: formState.company,
+          subject: formState.subject,
+          message: formState.message,
+        }),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -155,7 +179,7 @@ export default function ContactPage() {
                 </div>
                 <h3 className="font-display text-cream text-2xl font-light mb-3">Message received.</h3>
                 <p className="font-body text-cream/55 text-sm leading-relaxed max-w-md">
-                  We will be in touch within 24 hours. If this is urgent, email directly at sohom@betagrowthpartners.com.
+                  Your message has been received. We will be in touch within 48 hours.
                 </p>
               </div>
             ) : (
@@ -233,11 +257,25 @@ export default function ContactPage() {
                   />
                 </div>
 
+                {error && (
+                  <p className="font-body text-sm text-red-400 leading-relaxed">
+                    Something went wrong. Please email us directly at{" "}
+                    <a
+                      href="mailto:sohom@betagrowthpartners.com"
+                      className="underline underline-offset-2 hover:text-cream transition-colors duration-200"
+                    >
+                      sohom@betagrowthpartners.com
+                    </a>
+                    .
+                  </p>
+                )}
+
                 <button
                   type="submit"
-                  className="px-10 py-4 bg-gold text-plum-deep font-body font-medium text-sm tracking-wide hover:bg-gold-light transition-colors duration-300"
+                  disabled={submitting}
+                  className="px-10 py-4 bg-gold text-plum-deep font-body font-medium text-sm tracking-wide hover:bg-gold-light transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Send message
+                  {submitting ? "Sending…" : "Send message"}
                 </button>
               </form>
             )}
