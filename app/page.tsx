@@ -6,9 +6,10 @@ import { useRef } from "react";
 import ScrollReveal from "@/components/ScrollReveal";
 import CountUp from "@/components/CountUp";
 import MagneticButton from "@/components/MagneticButton";
+import RecentInsights from "@/components/RecentInsights";
 
 const stats = [
-  { value: 48, suffix: "%", label: "Revenue growth, Year 1", context: "Amla Spa Group" },
+  { value: 46, suffix: "%", label: "Revenue growth, Year 1", context: "Amla Spa Group" },
   { value: 84, suffix: "%", label: "Revenue growth, Year 2", context: "Amla Spa Group" },
   { value: 4.6, suffix: "", label: "Google review score", context: "Up from 4.2" },
   { value: 7, suffix: "", label: "New partnerships secured", context: "Amla Spa Group" },
@@ -42,6 +43,9 @@ export default function Home() {
     offset: ["start start", "end start"],
   });
   const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+  // Headline + sub content parallax: moves ~12% slower than scroll. Reads as "premium," not "demo reel."
+  const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "12%"]);
+  const contentOpacity = useTransform(scrollYProgress, [0, 0.6, 1], [1, 1, 0.7]);
 
   return (
     <main>
@@ -67,7 +71,10 @@ export default function Home() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_#2a0d3530_0%,_transparent_70%)] pointer-events-none" />
 
         {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-24 lg:py-32">
+        <motion.div
+          style={{ y: contentY, opacity: contentOpacity }}
+          className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-24 lg:py-32"
+        >
           <div className="max-w-4xl">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -111,6 +118,7 @@ export default function Home() {
               className="flex flex-col sm:flex-row gap-4"
             >
               <MagneticButton
+                data-cursor="cta"
                 className="px-8 py-4 bg-gold text-plum-deep font-body font-medium text-sm tracking-wide hover:bg-gold-light transition-colors duration-300"
                 onClick={() => (window.location.href = "/diagnostic")}
               >
@@ -124,7 +132,7 @@ export default function Home() {
               </Link>
             </motion.div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Bottom fade */}
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-plum to-transparent pointer-events-none" />
@@ -212,10 +220,88 @@ export default function Home() {
                   </div>
                 ))}
                 <p className="font-body text-xs text-cream/30 mt-5">
-                  Percentage of audited businesses with significant gaps in each area.
+                  Observed across audits and ghost-shop studies conducted by Generation Beta, 2024-2026.
                 </p>
               </div>
             </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* What we audit */}
+      <section className="border-y border-gold/10 bg-plum-mid/10">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-24 lg:py-32">
+          <ScrollReveal className="mb-14 max-w-3xl">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="h-px w-8 bg-gold" />
+              <span className="font-body text-gold text-xs tracking-[0.2em] uppercase">
+                What we audit
+              </span>
+            </div>
+            <h2
+              className="font-display text-cream leading-[1.05] mb-4"
+              style={{ fontSize: "clamp(2rem, 4vw, 3.2rem)" }}
+            >
+              Twelve specific areas, every Diagnostic.
+            </h2>
+            <p className="font-body text-cream/55 text-base lg:text-lg leading-relaxed">
+              No checklist consulting. Each area is examined against your data, your operations, and your actual customers.
+            </p>
+          </ScrollReveal>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-10">
+            {[
+              {
+                title: "Pricing Architecture",
+                detail: "We compare your prices against cost of delivery, competitor positioning, and willingness-to-pay signals to surface where you are undercharging.",
+              },
+              {
+                title: "Booking Flow Analysis",
+                detail: "Every step between intent and confirmation is mapped to find the friction that silently kills conversion.",
+              },
+              {
+                title: "Online Reputation Signals",
+                detail: "Reviews, response patterns, and sentiment audited to expose what your digital presence tells customers before they ever contact you.",
+              },
+              {
+                title: "Channel Mix & Distribution",
+                detail: "We map where revenue actually comes from and identify channels you are over-dependent on or systematically under-using.",
+              },
+              {
+                title: "Conversion Infrastructure",
+                detail: "Every touchpoint between discovery and purchase is examined for the gaps that quietly leak qualified interest.",
+              },
+              {
+                title: "Partnership Architecture",
+                detail: "We surface the high-leverage B2B relationships you are not capturing and structure them for systematic, predictable revenue.",
+              },
+            ].map((area, i) => (
+              <ScrollReveal key={area.title} delay={i * 0.06}>
+                <div
+                  data-cursor="hover"
+                  className="group relative border-t border-gold/15 pt-5 px-4 pb-5 -mx-4 cursor-pointer transition-all duration-200 ease-out hover:-translate-y-1 hover:border-gold/40 hover:shadow-[0_0_0_1px_rgba(201,168,76,0.3),0_8px_24px_-12px_rgba(201,168,76,0.25)]"
+                >
+                  <h3 className="font-display text-cream text-xl font-light mb-3 group-hover:text-gold-light transition-colors duration-200">
+                    {area.title}
+                  </h3>
+                  <p className="font-body text-cream/55 text-sm leading-relaxed group-hover:text-cream/70 transition-colors duration-200">
+                    {area.detail}
+                  </p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+
+          <ScrollReveal delay={0.2} className="mt-14">
+            <Link
+              href="/method#phase-01"
+              className="inline-flex items-center gap-3 font-body text-sm text-gold hover:text-gold-light transition-colors duration-200"
+            >
+              See all 12 audit areas
+              <svg width="16" height="10" viewBox="0 0 16 10" fill="none">
+                <path d="M1 5H15M11 1L15 5L11 9" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/>
+              </svg>
+            </Link>
           </ScrollReveal>
         </div>
       </section>
@@ -284,32 +370,24 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonial */}
-      <section className="max-w-7xl mx-auto px-6 lg:px-12 py-24 lg:py-32">
+      {/* Method pull-quote */}
+      <section className="max-w-7xl mx-auto px-6 lg:px-12 py-28 lg:py-40">
         <ScrollReveal>
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="mb-8">
-              <svg width="32" height="24" viewBox="0 0 32 24" fill="none" className="mx-auto opacity-40">
-                <path d="M0 24V14.4C0 6.4 4.8 1.6 14.4 0L16 2.4C11.2 3.2 8.8 5.6 8 9.6H14.4V24H0ZM17.6 24V14.4C17.6 6.4 22.4 1.6 32 0L33.6 2.4C28.8 3.2 26.4 5.6 25.6 9.6H32V24H17.6Z" fill="#c9a84c"/>
-              </svg>
-            </div>
+          <div className="max-w-4xl mx-auto text-center">
             <blockquote
-              className="font-display text-cream italic leading-relaxed mb-8"
-              style={{ fontSize: "clamp(1.4rem, 2.5vw, 2rem)" }}
+              className="font-display text-cream italic font-light leading-[1.15] tracking-tight"
+              style={{ fontSize: "clamp(2rem, 5vw, 4rem)" }}
             >
-              &ldquo;Sohom has been our growth partner for over two years now. He&apos;s practically part of our internal team. Our monthly revenue has grown 46% in the first year.&rdquo;
+              <span className="text-gold/60 mr-2">&ldquo;</span>
+              Architecture without execution is a document.
+              <span className="text-gold/60 ml-2">&rdquo;</span>
             </blockquote>
-            <div className="flex items-center justify-center gap-4">
-              <div className="w-10 h-px bg-gold" />
-              <div>
-                <p className="font-body text-cream text-sm font-medium">Jim Sutherland</p>
-                <p className="font-body text-cream/40 text-xs">Partner, Amla Spa Group</p>
-              </div>
-              <div className="w-10 h-px bg-gold" />
-            </div>
           </div>
         </ScrollReveal>
       </section>
+
+      {/* Recent insights */}
+      <RecentInsights />
 
       {/* CTA Band */}
       <section className="bg-gold relative overflow-hidden">
@@ -319,15 +397,16 @@ export default function Home() {
             <h2 className="font-display text-plum-deep text-3xl lg:text-4xl font-light leading-tight mb-2">
               Find out where your revenue is going.
             </h2>
-            <p className="font-body text-plum-deep/70 text-sm">
-              15-day audit. Fixed fee. No ongoing commitment required.
+            <p className="font-body text-plum-deep/70 text-sm max-w-2xl">
+              15-day audit. Fixed fee of $3,500, credited in full toward Phase 2 if you proceed within 60 days. No ongoing commitment required.
             </p>
           </div>
           <MagneticButton
+            data-cursor="cta"
             className="px-10 py-4 bg-plum-deep text-cream font-body font-medium text-sm tracking-wide hover:bg-plum transition-colors duration-300 whitespace-nowrap flex-shrink-0"
             onClick={() => (window.location.href = "/diagnostic")}
           >
-            Get the Diagnostic — $1,500
+            Get the Diagnostic
           </MagneticButton>
         </div>
       </section>

@@ -121,7 +121,7 @@ export default function Nav() {
             href="/diagnostic"
             className="mt-2 px-5 py-3 border border-gold/60 text-gold font-body text-sm tracking-wide text-center"
           >
-            Get Diagnostic — $1,500
+            Get Diagnostic
           </Link>
         </div>
       </motion.div>

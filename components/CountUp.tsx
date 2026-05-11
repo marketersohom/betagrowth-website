@@ -11,9 +11,12 @@ interface CountUpProps {
   decimals?: number;
 }
 
+// easeOutCubic — fast start, decelerating settle. Reads as "earned, not printed."
+const easeOutCubic = (t: number) => 1 - Math.pow(1 - t, 3);
+
 export default function CountUp({
   end,
-  duration = 2,
+  duration = 1.4,
   prefix = "",
   suffix = "",
   decimals = 0,
@@ -24,24 +27,22 @@ export default function CountUp({
 
   useEffect(() => {
     if (!isInView) return;
-    const start = 0;
-    const steps = 60;
-    const increment = (end - start) / steps;
-    let current = start;
-    let step = 0;
 
-    const timer = setInterval(() => {
-      step++;
-      current += increment;
-      if (step >= steps) {
-        setValue(end);
-        clearInterval(timer);
-      } else {
-        setValue(parseFloat(current.toFixed(decimals)));
-      }
-    }, (duration * 1000) / steps);
+    let rafId = 0;
+    const startTime = performance.now();
+    const durationMs = duration * 1000;
 
-    return () => clearInterval(timer);
+    const tick = (now: number) => {
+      const elapsed = now - startTime;
+      const t = Math.min(elapsed / durationMs, 1);
+      const eased = easeOutCubic(t);
+      const current = eased * end;
+      setValue(t >= 1 ? end : parseFloat(current.toFixed(decimals)));
+      if (t < 1) rafId = requestAnimationFrame(tick);
+    };
+
+    rafId = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(rafId);
   }, [isInView, end, duration, decimals]);
 
   return (

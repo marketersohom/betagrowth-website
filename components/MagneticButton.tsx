@@ -9,6 +9,7 @@ interface MagneticButtonProps {
   onClick?: () => void;
   href?: string;
   strength?: number;
+  "data-cursor"?: string;
 }
 
 export default function MagneticButton({
@@ -16,6 +17,7 @@ export default function MagneticButton({
   className = "",
   onClick,
   strength = 0.35,
+  "data-cursor": dataCursor,
 }: MagneticButtonProps) {
   const ref = useRef<HTMLButtonElement>(null);
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -45,6 +47,7 @@ export default function MagneticButton({
       animate={{ x: position.x, y: position.y }}
       transition={{ type: "spring", stiffness: 200, damping: 15, mass: 0.2 }}
       className={className}
+      data-cursor={dataCursor}
     >
       {children}
     </motion.button>

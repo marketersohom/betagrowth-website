@@ -65,6 +65,18 @@ export default async function BlogPage() {
                       >
                         {post.title}
                       </h2>
+                      {post.categories && post.categories.length > 0 && (
+                        <div className="flex flex-wrap gap-2 mb-3">
+                          {post.categories.map((cat) => (
+                            <span
+                              key={cat}
+                              className="font-body text-[10px] text-gold/80 tracking-[0.15em] uppercase border border-gold/25 px-2 py-1"
+                            >
+                              {cat}
+                            </span>
+                          ))}
+                        </div>
+                      )}
                       {post.excerpt && (
                         <p className="font-body text-cream/50 text-sm leading-relaxed mb-4 max-w-2xl">
                           {post.excerpt}

@@ -38,6 +38,22 @@ export default defineType({
       description: "A short summary shown on the blog index.",
     }),
     defineField({
+      name: "categories",
+      title: "Categories",
+      type: "array",
+      of: [{ type: "string" }],
+      options: {
+        list: [
+          { title: "Revenue Leak Architecture", value: "Revenue Leak Architecture" },
+          { title: "Pricing", value: "Pricing" },
+          { title: "Operations", value: "Operations" },
+          { title: "Positioning", value: "Positioning" },
+          { title: "Case Notes", value: "Case Notes" },
+        ],
+      },
+      description: "Tag this post with one or more categories. Used as filter tags on the blog index.",
+    }),
+    defineField({
       name: "mainImage",
       title: "Main Image",
       type: "image",

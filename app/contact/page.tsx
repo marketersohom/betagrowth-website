@@ -148,18 +148,31 @@ export default function ContactPage() {
                 </p>
               </div>
 
-              <div className="border-t border-gold/10 pt-8">
+              <div className="border-t border-gold/10 pt-8 relative isolate">
                 <p className="font-body text-xs text-gold tracking-[0.15em] uppercase mb-4">This form is for</p>
-                <ul className="space-y-2">
+                <ul className="space-y-3 relative z-[1]">
                   {[
                     "Existing clients",
                     "Partnership enquiries",
                     "Press and media",
                     "Speaking engagements",
                   ].map((item) => (
-                    <li key={item} className="flex items-center gap-2">
-                      <div className="w-1 h-1 rounded-full bg-gold/50 flex-shrink-0" />
-                      <span className="font-body text-xs text-cream/50">{item}</span>
+                    <li
+                      key={item}
+                      className="flex items-center gap-2.5 relative no-underline"
+                      style={{ textDecoration: "none" }}
+                    >
+                      <span
+                        aria-hidden="true"
+                        className="inline-block flex-shrink-0 rounded-full bg-gold/50"
+                        style={{ width: "4px", height: "4px" }}
+                      />
+                      <span
+                        className="font-body text-xs text-cream/50 relative"
+                        style={{ textDecoration: "none" }}
+                      >
+                        {item}
+                      </span>
                     </li>
                   ))}
                 </ul>

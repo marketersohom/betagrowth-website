@@ -6,7 +6,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import CountUp from "@/components/CountUp";
 
 const amlaStats = [
-  { value: 48, suffix: "%", label: "Revenue growth", period: "Year 1" },
+  { value: 46, suffix: "%", label: "Revenue growth", period: "Year 1" },
   { value: 84, suffix: "%", label: "Revenue growth", period: "Year 2" },
   { value: 7, suffix: "", label: "New partnerships", period: "Secured" },
   { value: 32, suffix: "%", label: "Booking errors reduced", period: "Operations" },
@@ -43,9 +43,9 @@ export default function WorkPage() {
           className="font-display text-cream leading-[0.95] tracking-tight mb-8"
           style={{ fontSize: "clamp(2.8rem, 6vw, 5.5rem)" }}
         >
-          Two engagements.
+          Where the system
           <br />
-          <em className="text-gold not-italic">Real numbers.</em>
+          <em className="text-gold not-italic">works.</em>
         </motion.h1>
 
       </section>
@@ -148,7 +148,7 @@ export default function WorkPage() {
           <ScrollReveal className="mt-16 border-t border-gold/10 pt-12">
             <div className="max-w-2xl">
               <blockquote className="font-display text-cream italic text-xl lg:text-2xl font-light leading-relaxed mb-6">
-                &ldquo;Sohom has been our growth partner for over two years now. He&apos;s practically part of our internal team. Our monthly revenue has grown 46% in the first year.&rdquo;
+                &ldquo;Sohom has been our growth partner for over two years now. He&apos;s practically part of our internal team. Our monthly revenue grew 46% in the first year and another 84% in the second.&rdquo;
               </blockquote>
               <div className="flex items-center gap-4">
                 <div className="w-8 h-px bg-gold" />
@@ -211,7 +211,7 @@ export default function WorkPage() {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16 max-w-2xl">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6 max-w-2xl">
             {tonyStats.map((stat, i) => (
               <ScrollReveal key={stat.label} delay={i * 0.08}>
                 <div className="border-t border-gold/20 pt-4">
@@ -230,6 +230,11 @@ export default function WorkPage() {
               </ScrollReveal>
             ))}
           </div>
+          <ScrollReveal>
+            <p className="font-body text-cream/45 text-xs italic max-w-2xl mb-16 leading-relaxed">
+              Pre-launch positioning engagement. Revenue results pending book launch, August 2026.
+            </p>
+          </ScrollReveal>
 
           {/* Story */}
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-24">
@@ -270,6 +275,7 @@ export default function WorkPage() {
           </div>
           <Link
             href="/diagnostic"
+            data-cursor="cta"
             className="px-10 py-4 bg-plum-deep text-cream font-body font-medium text-sm tracking-wide hover:bg-plum transition-colors duration-300 whitespace-nowrap flex-shrink-0"
           >
             Start the Diagnostic

@@ -14,7 +14,7 @@ export default function ScrollReveal({
   children,
   className = "",
   delay = 0,
-  y = 30,
+  y = 20,
 }: ScrollRevealProps) {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-8% 0px" });
@@ -25,7 +25,7 @@ export default function ScrollReveal({
       className={className}
       initial={{ opacity: 0, y }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y }}
-      transition={{ duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] }}
     >
       {children}
     </motion.div>

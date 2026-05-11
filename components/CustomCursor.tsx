@@ -3,8 +3,10 @@
 import { useEffect, useState } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 
+type CursorMode = "idle" | "hover" | "cta";
+
 export default function CustomCursor() {
-  const [isHovering, setIsHovering] = useState(false);
+  const [mode, setMode] = useState<CursorMode>("idle");
   const [isVisible, setIsVisible] = useState(false);
 
   const mouseX = useMotionValue(-100);
@@ -20,29 +22,28 @@ export default function CustomCursor() {
       if (!isVisible) setIsVisible(true);
     };
 
-    const handleEnter = () => setIsHovering(true);
-    const handleLeave = () => setIsHovering(false);
+    const enterFor = (next: CursorMode) => () => setMode(next);
+    const handleLeave = () => setMode("idle");
 
     window.addEventListener("mousemove", handleMove);
 
-    const targets = document.querySelectorAll(
-      "a, button, [role='button'], input, textarea, select, label, [data-cursor='hover']"
-    );
-    targets.forEach((el) => {
-      el.addEventListener("mouseenter", handleEnter);
-      el.addEventListener("mouseleave", handleLeave);
-    });
-
-    const observer = new MutationObserver(() => {
-      const newTargets = document.querySelectorAll(
-        "a, button, [role='button'], [data-cursor='hover']"
-      );
-      newTargets.forEach((el) => {
-        el.addEventListener("mouseenter", handleEnter);
+    const bind = () => {
+      const ctaTargets = document.querySelectorAll("[data-cursor='cta']");
+      ctaTargets.forEach((el) => {
+        el.addEventListener("mouseenter", enterFor("cta"));
         el.addEventListener("mouseleave", handleLeave);
       });
-    });
+      const hoverTargets = document.querySelectorAll(
+        "a:not([data-cursor='cta']), button:not([data-cursor='cta']), [role='button']:not([data-cursor='cta']), input, textarea, select, label, [data-cursor='hover']"
+      );
+      hoverTargets.forEach((el) => {
+        el.addEventListener("mouseenter", enterFor("hover"));
+        el.addEventListener("mouseleave", handleLeave);
+      });
+    };
+    bind();
 
+    const observer = new MutationObserver(() => bind());
     observer.observe(document.body, { childList: true, subtree: true });
 
     return () => {
@@ -50,6 +51,11 @@ export default function CustomCursor() {
       observer.disconnect();
     };
   }, [mouseX, mouseY, isVisible]);
+
+  // Size + opacity per mode. CTA = small, tight 14px ring. Hover = 44px. Idle = 32px.
+  const ringSize = mode === "cta" ? 14 : mode === "hover" ? 44 : 32;
+  const ringOpacity = !isVisible ? 0 : mode === "cta" ? 1 : mode === "hover" ? 0.8 : 0.4;
+  const dotSize = mode === "cta" ? 0 : mode === "hover" ? 10 : 6;
 
   return (
     <>
@@ -61,11 +67,11 @@ export default function CustomCursor() {
           y: mouseY,
           translateX: "-50%",
           translateY: "-50%",
-          opacity: isVisible ? 1 : 0,
+          opacity: isVisible && dotSize > 0 ? 1 : 0,
         }}
         animate={{
-          width: isHovering ? 10 : 6,
-          height: isHovering ? 10 : 6,
+          width: dotSize,
+          height: dotSize,
           backgroundColor: "#c9a84c",
         }}
         transition={{ duration: 0.15 }}
@@ -83,9 +89,9 @@ export default function CustomCursor() {
           opacity: isVisible ? 1 : 0,
         }}
         animate={{
-          width: isHovering ? 44 : 32,
-          height: isHovering ? 44 : 32,
-          opacity: isVisible ? (isHovering ? 0.8 : 0.4) : 0,
+          width: ringSize,
+          height: ringSize,
+          opacity: ringOpacity,
         }}
         transition={{ duration: 0.2 }}
       />

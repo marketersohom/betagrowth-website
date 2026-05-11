@@ -35,7 +35,7 @@ export default function Footer() {
               <span className="font-display text-cream text-lg font-medium">Generation Beta</span>
             </div>
             <p className="font-body text-sm text-cream/50 leading-relaxed max-w-xs">
-              Revenue architecture for hospitality, wellness, and professional services. Based in Bangkok.
+              Revenue Leak Architecture for hospitality, wellness, and professional services. Based in Bangkok.
             </p>
             <div className="mt-6 h-px w-12 bg-gold/40" />
           </div>

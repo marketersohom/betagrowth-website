@@ -8,7 +8,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 const sectors = [
   {
     name: "Hospitality",
-    description: "Hotels, resorts, and boutique properties across Southeast Asia. Revenue architecture, pricing strategy, and partnership development.",
+    description: "Hotels, resorts, and boutique properties across Southeast Asia. Active engagements in spa and wellness operations within the sector. Accepting boutique hotel and resort engagements through 2026.",
   },
   {
     name: "Wellness & Spa",
@@ -20,7 +20,7 @@ const sectors = [
   },
   {
     name: "F&B",
-    description: "Independent restaurants and beverage brands. Revenue per cover, private dining, event revenue, and brand positioning.",
+    description: "Independent restaurants and beverage brands. We are actively expanding into this sector and accepting select engagements through 2026.",
   },
 ];
 
@@ -246,6 +246,7 @@ export default function AboutPage() {
           </div>
           <Link
             href="/diagnostic"
+            data-cursor="cta"
             className="px-10 py-4 bg-plum-deep text-cream font-body font-medium text-sm tracking-wide hover:bg-plum transition-colors duration-300 whitespace-nowrap flex-shrink-0"
           >
             Get the Diagnostic

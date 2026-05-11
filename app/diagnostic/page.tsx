@@ -119,9 +119,9 @@ export default function DiagnosticPage() {
           >
             <p className="font-body text-xs text-gold tracking-[0.2em] uppercase mb-4">Fixed Fee</p>
             <div className="font-display text-cream leading-none mb-2" style={{ fontSize: "3rem" }}>
-              $1,500
+              $3,500
             </div>
-            <p className="font-body text-cream/40 text-sm mb-6">USD. No hidden fees.</p>
+            <p className="font-body text-cream/40 text-sm mb-6">USD. Credited in full toward Phase 2 if you proceed within 60 days.</p>
             <div className="space-y-3 mb-8">
               {["15-day turnaround", "12 audit areas", "3 deliverables", "Delivery call included"].map((item) => (
                 <div key={item} className="flex items-center gap-3">
@@ -136,6 +136,7 @@ export default function DiagnosticPage() {
               ))}
             </div>
             <MagneticButton
+              data-cursor="cta"
               className="w-full py-4 bg-gold text-plum-deep font-body font-medium text-sm tracking-wide hover:bg-gold-light transition-colors duration-300"
               onClick={() => (window.location.href = "/contact")}
             >
@@ -253,12 +254,13 @@ export default function DiagnosticPage() {
             <h2 className="font-display text-plum-deep text-3xl lg:text-4xl font-light leading-tight mb-2">
               Start with the Diagnostic.
             </h2>
-            <p className="font-body text-plum-deep/70 text-sm">
-              $1,500. 15 days. One decision to make.
+            <p className="font-body text-plum-deep/70 text-sm max-w-2xl">
+              $3,500. 15 days. Credited toward Phase 2 if you proceed. One decision to make.
             </p>
           </div>
           <Link
             href="/contact"
+            data-cursor="cta"
             className="px-10 py-4 bg-plum-deep text-cream font-body font-medium text-sm tracking-wide hover:bg-plum transition-colors duration-300 whitespace-nowrap flex-shrink-0"
           >
             Start the Diagnostic

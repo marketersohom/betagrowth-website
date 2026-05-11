@@ -24,6 +24,7 @@ export interface Post {
   author: string;
   publishedAt: string;
   excerpt?: string;
+  categories?: string[];
   mainImage?: SanityImageSource & { alt?: string };
   body?: unknown[];
 }
@@ -37,6 +38,7 @@ export async function getPosts(): Promise<Post[]> {
       author,
       publishedAt,
       excerpt,
+      categories,
       mainImage
     }`
   );
@@ -51,6 +53,7 @@ export async function getPost(slug: string): Promise<Post | null> {
       author,
       publishedAt,
       excerpt,
+      categories,
       mainImage,
       body
     }`,
