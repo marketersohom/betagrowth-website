@@ -276,10 +276,10 @@ export default function Home() {
                 detail: "We surface the high-leverage B2B relationships you are not capturing and structure them for systematic, predictable revenue.",
               },
             ].map((area, i) => (
-              <ScrollReveal key={area.title} delay={i * 0.06}>
+              <ScrollReveal key={area.title} delay={i * 0.1}>
                 <div
                   data-cursor="hover"
-                  className="group relative border-t border-gold/15 pt-5 px-4 pb-5 -mx-4 cursor-pointer transition-all duration-200 ease-out hover:-translate-y-1 hover:border-gold/40 hover:shadow-[0_0_0_1px_rgba(201,168,76,0.3),0_8px_24px_-12px_rgba(201,168,76,0.25)]"
+                  className="group relative border-t border-gold/15 pt-5 px-4 pb-5 -mx-4 cursor-pointer transition-[transform,border-color,box-shadow] duration-200 ease-out hover:-translate-y-[3px] hover:border-gold/30 hover:shadow-[0_0_0_1px_rgba(201,168,76,0.3),inset_0_0_24px_rgba(201,168,76,0.04)]"
                 >
                   <h3 className="font-display text-cream text-xl font-light mb-3 group-hover:text-gold-light transition-colors duration-200">
                     {area.title}
@@ -392,7 +392,7 @@ export default function Home() {
       {/* CTA Band */}
       <section className="bg-gold relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_right,_#e2c97e40_0%,_transparent_60%)] pointer-events-none" />
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-20 flex flex-col lg:flex-row items-center justify-between gap-8">
+        <ScrollReveal className="relative max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-20 flex flex-col lg:flex-row items-center justify-between gap-8">
           <div>
             <h2 className="font-display text-plum-deep text-3xl lg:text-4xl font-light leading-tight mb-2">
               Find out where your revenue is going.
@@ -408,7 +408,7 @@ export default function Home() {
           >
             Get the Diagnostic
           </MagneticButton>
-        </div>
+        </ScrollReveal>
       </section>
     </main>
   );

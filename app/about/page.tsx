@@ -235,7 +235,7 @@ export default function AboutPage() {
       {/* CTA */}
       <section className="bg-gold relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_#e2c97e40_0%,_transparent_60%)] pointer-events-none" />
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-20 flex flex-col lg:flex-row items-center justify-between gap-8">
+        <ScrollReveal className="relative max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-20 flex flex-col lg:flex-row items-center justify-between gap-8">
           <div>
             <h2 className="font-display text-plum-deep text-3xl lg:text-4xl font-light leading-tight mb-2">
               Ready to work together?
@@ -251,7 +251,7 @@ export default function AboutPage() {
           >
             Get the Diagnostic
           </Link>
-        </div>
+        </ScrollReveal>
       </section>
     </main>
   );

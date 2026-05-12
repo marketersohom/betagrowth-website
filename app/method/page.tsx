@@ -318,13 +318,26 @@ export default function MethodPage() {
                   </motion.div>
                 </button>
 
-                <AnimatePresence>
+                <AnimatePresence initial={false}>
                   {expanded === i && (
                     <motion.div
                       initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: "auto", opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
+                      animate={{
+                        height: "auto",
+                        opacity: 1,
+                        transition: {
+                          height: { duration: 0.35, ease: [0.4, 0, 0.2, 1] },
+                          opacity: { duration: 0.25, ease: [0.4, 0, 0.2, 1], delay: 0.05 },
+                        },
+                      }}
+                      exit={{
+                        height: 0,
+                        opacity: 0,
+                        transition: {
+                          height: { duration: 0.3, ease: [0.4, 0, 0.2, 1] },
+                          opacity: { duration: 0.15, ease: [0.4, 0, 0.2, 1] },
+                        },
+                      }}
                       className="overflow-hidden"
                     >
                       <div className="px-8 pb-8 border-t border-gold/10">
@@ -385,7 +398,7 @@ export default function MethodPage() {
       {/* CTA */}
       <section className="bg-gold relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_#e2c97e40_0%,_transparent_60%)] pointer-events-none" />
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-20 flex flex-col lg:flex-row items-center justify-between gap-8">
+        <ScrollReveal className="relative max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-20 flex flex-col lg:flex-row items-center justify-between gap-8">
           <div>
             <h2 className="font-display text-plum-deep text-3xl lg:text-4xl font-light leading-tight mb-2">
               Start with the Diagnostic.
@@ -400,7 +413,7 @@ export default function MethodPage() {
           >
             See the Diagnostic
           </Link>
-        </div>
+        </ScrollReveal>
       </section>
     </main>
   );
