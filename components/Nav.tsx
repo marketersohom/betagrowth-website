@@ -71,6 +71,7 @@ export default function Nav() {
           ))}
           <Link
             href="/diagnostic"
+            data-cursor="cta"
             className="ml-4 px-5 py-2 border border-gold/60 text-gold font-body text-sm tracking-wide hover:bg-gold hover:text-plum-deep transition-all duration-300"
           >
             Get Diagnostic
@@ -119,6 +120,7 @@ export default function Nav() {
           ))}
           <Link
             href="/diagnostic"
+            data-cursor="cta"
             className="mt-2 px-5 py-3 border border-gold/60 text-gold font-body text-sm tracking-wide text-center"
           >
             Get Diagnostic

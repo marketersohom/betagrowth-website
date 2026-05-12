@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import ScrollReveal from "@/components/ScrollReveal";
 import CountUp from "@/components/CountUp";
 import MagneticButton from "@/components/MagneticButton";
@@ -42,10 +42,23 @@ export default function Home() {
     target: heroRef,
     offset: ["start start", "end start"],
   });
-  const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
-  // Headline + sub content parallax: moves ~12% slower than scroll. Reads as "premium," not "demo reel."
-  const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "12%"]);
-  const contentOpacity = useTransform(scrollYProgress, [0, 0.6, 1], [1, 1, 0.7]);
+
+  // Disable parallax on mobile + when user prefers reduced motion. Prevents jank on lower-end Android.
+  const [enableParallax, setEnableParallax] = useState(true);
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 768px), (prefers-reduced-motion: reduce)");
+    const apply = () => setEnableParallax(!mq.matches);
+    apply();
+    mq.addEventListener("change", apply);
+    return () => mq.removeEventListener("change", apply);
+  }, []);
+
+  const bgY = useTransform(scrollYProgress, (v) => (enableParallax ? `${v * 30}%` : "0%"));
+  // Hero content drifts at 85% of scroll (15% slower). Max premium feel before "demo reel" territory.
+  const contentY = useTransform(scrollYProgress, (v) => (enableParallax ? `${v * 15}%` : "0%"));
+  const contentOpacity = useTransform(scrollYProgress, (v) =>
+    !enableParallax ? 1 : v < 0.6 ? 1 : 1 - (v - 0.6) * 0.75
+  );
 
   return (
     <main>
@@ -278,7 +291,6 @@ export default function Home() {
             ].map((area, i) => (
               <ScrollReveal key={area.title} delay={i * 0.1}>
                 <div
-                  data-cursor="hover"
                   className="group relative border-t border-gold/15 pt-5 px-4 pb-5 -mx-4 cursor-pointer transition-[transform,border-color,box-shadow] duration-200 ease-out hover:-translate-y-[3px] hover:border-gold/30 hover:shadow-[0_0_0_1px_rgba(201,168,76,0.3),inset_0_0_24px_rgba(201,168,76,0.04)]"
                 >
                   <h3 className="font-display text-cream text-xl font-light mb-3 group-hover:text-gold-light transition-colors duration-200">

@@ -14,7 +14,6 @@
 
 html {
   scroll-behavior: smooth;
-  cursor: none;
 }
 
 body {
@@ -26,12 +25,12 @@ body {
   overflow-x: hidden;
 }
 
-* {
-  cursor: none;
-}
-
-a, button, [role="button"], input, textarea, select, label {
-  cursor: none;
+/* Hide native cursor only on key CTAs — the custom cursor renders here. */
+@media (hover: hover) and (pointer: fine) {
+  [data-cursor="cta"],
+  [data-cursor="cta"] * {
+    cursor: none;
+  }
 }
 
 /* Selection */

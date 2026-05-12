@@ -409,6 +409,7 @@ export default function MethodPage() {
           </div>
           <Link
             href="/diagnostic"
+            data-cursor="cta"
             className="px-10 py-4 bg-plum-deep text-cream font-body font-medium text-sm tracking-wide hover:bg-plum transition-colors duration-300 whitespace-nowrap flex-shrink-0"
           >
             See the Diagnostic
