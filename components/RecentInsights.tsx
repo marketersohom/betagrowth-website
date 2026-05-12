@@ -62,7 +62,7 @@ export default function RecentInsights() {
         {posts.map((post, i) => (
           <ScrollReveal key={post._id} delay={i * 0.1}>
             <Link
-              href={`/blog/${post.slug.current}`}
+              href={`/insights/${post.slug.current}`}
               className="group block border-t border-gold/15 pt-5 hover:border-gold/40 transition-colors duration-300 h-full"
             >
               <time className="font-body text-xs text-cream/40 tracking-[0.1em] block mb-3">
@@ -94,7 +94,7 @@ export default function RecentInsights() {
 
       <ScrollReveal delay={0.2} className="mt-14">
         <Link
-          href="/blog"
+          href="/insights"
           className="inline-flex items-center gap-3 font-body text-sm text-gold hover:text-gold-light transition-colors duration-200"
         >
           All insights

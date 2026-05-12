@@ -10,7 +10,7 @@ const footerLinks = {
     { href: "/diagnostic", label: "The Diagnostic" },
     { href: "/method", label: "The Method" },
     { href: "/about", label: "About" },
-    { href: "/blog", label: "Blog" },
+    { href: "/insights", label: "Insights" },
   ],
   Connect: [
     { href: "/contact", label: "Contact" },

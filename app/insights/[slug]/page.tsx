@@ -132,13 +132,13 @@ export default async function PostPage({
       {/* Hero */}
       <section className="max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-24">
         <Link
-          href="/blog"
+          href="/insights"
           className="inline-flex items-center gap-2 font-body text-xs text-cream/40 hover:text-gold transition-colors duration-200 mb-12 tracking-[0.1em] uppercase"
         >
           <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
             <path d="M13 5H1M5 1L1 5L5 9" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/>
           </svg>
-          All posts
+          All insights
         </Link>
 
         <div className="max-w-3xl">
@@ -199,13 +199,13 @@ export default async function PostPage({
           {/* Back link */}
           <div className="mt-16 pt-8 border-t border-gold/10">
             <Link
-              href="/blog"
+              href="/insights"
               className="inline-flex items-center gap-3 font-body text-sm text-gold hover:text-gold-light transition-colors duration-200"
             >
               <svg width="16" height="10" viewBox="0 0 16 10" fill="none">
                 <path d="M15 5H1M5 1L1 5L5 9" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/>
               </svg>
-              Back to all posts
+              Back to all insights
             </Link>
           </div>
         </div>

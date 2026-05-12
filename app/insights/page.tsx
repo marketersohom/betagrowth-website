@@ -11,7 +11,7 @@ function formatDate(dateString: string) {
   });
 }
 
-export default async function BlogPage() {
+export default async function InsightsPage() {
   const posts = await getPosts();
 
   return (
@@ -51,7 +51,7 @@ export default async function BlogPage() {
                 className="py-10 group"
                 style={{ animationDelay: `${i * 80}ms` }}
               >
-                <Link href={`/blog/${post.slug.current}`} className="block">
+                <Link href={`/insights/${post.slug.current}`} className="block">
                   <div className="grid lg:grid-cols-12 gap-6 lg:gap-12 items-start">
                     <div className="lg:col-span-3">
                       <time className="font-body text-xs text-cream/35 tracking-[0.1em]">
