@@ -25,7 +25,7 @@ const phases: Phase[] = [
     duration: "15 days",
     tagline: "A 15-day audit of your full revenue system. We find where money is being lost before recommending anything.",
     description: "The Diagnostic is the foundation of everything. We do not guess at problems or rely on your instincts about where revenue is lost. We audit 12 specific areas systematically, interview stakeholders, and examine your data. The output is a specific, ranked list of revenue gaps.",
-    fee: "$3,500, fixed. Credited in full against Phase 2 if you proceed within 60 days of delivery.",
+    fee: "$1,500, fixed. Credited in full against Phase 2 if you proceed within 60 days of delivery.",
     deliverables: [
       "Revenue Leak Report (30 to 50 pages)",
       "Priority Matrix — ranked by impact and effort",
@@ -54,100 +54,66 @@ const phases: Phase[] = [
   {
     number: "02",
     title: "System Architecture",
-    duration: "4 to 6 weeks",
-    tagline: "We design and build the growth infrastructure your business needs: positioning, funnels, operations, and client experience.",
-    description: "Once the diagnostic is complete, we design the full revenue system your business should be running. This is not a patch on existing problems. It is an architectural redesign of how revenue flows through your business: pricing models, channel strategy, conversion infrastructure, partnership frameworks.",
-    fee: "$8,000 to $15,000, fixed. Scoped from Diagnostic findings.",
+    duration: "6 to 10 weeks",
+    tagline: "We design the revenue systems your business should be running, then build and install them alongside your team until they are live.",
+    description: "Once the Diagnostic is complete, we design the full revenue system your business should be running, then we build it and install it. This is not a document handed over at the door. We work inside your operations to stand up pricing models, channel strategy, conversion infrastructure, and partnership frameworks, and we do not stop at the blueprint. The system goes live before we are done.",
+    fee: "$4,000 to $7,000, fixed. Scoped from Diagnostic findings. Covers both design and installation.",
     deliverables: [
-      "Revenue System Blueprint (20 to 30 pages)",
-      "Pricing Model Redesign (tier structure, packaging logic, upsell sequencing)",
-      "Channel & Partnership Strategy (B2B and distribution roadmap)",
-      "Implementation Roadmap (90-day execution plan with weekly milestones)",
+      "Revenue System Blueprint",
+      "Pricing & packaging redesign, installed",
+      "Channel & partnership strategy, activated",
+      "Systems built, integrated, and live with your team",
     ],
     expanded: [
       {
         area: "Pricing Model Redesign",
-        detail: "We build pricing architectures that capture value accurately. This includes tiered offerings, package structures, seasonal pricing logic, and upsell sequences.",
+        detail: "We build pricing architectures that capture value accurately: tiered offerings, package structures, seasonal logic, and upsell sequences, then put them into production.",
       },
       {
         area: "Conversion Infrastructure",
-        detail: "We design the systems that move potential customers from discovery to booking to repeat. Every touchpoint is mapped and optimized.",
+        detail: "We build and install the systems that move guests from discovery to booking to repeat. Every touchpoint is mapped, rebuilt, and switched on.",
       },
       {
-        area: "Partnership Architecture",
-        detail: "Most businesses in hospitality and wellness are leaving significant revenue on the table through underdeveloped B2B partnerships. We identify and structure the highest-value relationships.",
+        area: "Partnership & Channel Activation",
+        detail: "We identify the highest-value B2B relationships and distribution channels, then structure and activate them so the revenue actually starts flowing.",
       },
       {
-        area: "Operations Alignment",
-        detail: "Revenue systems fail when operations cannot support them. We align your operational capacity with the revenue architecture so growth is sustainable.",
+        area: "Installation & Team Training",
+        detail: "We work inside your operations to install each system and train your team to run it, so the architecture holds after we step back. Accountable for the systems going live, not just the plan.",
       },
     ],
   },
   {
     number: "03",
-    title: "Execution & Integration",
-    duration: "3 to 6 months",
-    tagline: "We stay embedded until the system is running, tested, and producing measurable results.",
-    description: "Architecture without execution is a document. In Phase 3 we work directly with your team to install the systems we have designed. We track metrics weekly, iterate based on real data, and do not disengage until the numbers are moving in the right direction.",
-    fee: "$6,000 to $10,000 per month. Three-month minimum.",
+    title: "Ongoing Partnership",
+    duration: "Monthly",
+    tagline: "We run the revenue system with you, tracking the numbers and compounding the gains month over month.",
+    description: "Ongoing Partnership is where the system keeps producing. There are two ways in. Continue after Phase 2 on a three-month minimum, or start here from day one: we take over the full process from the start, you skip the Phase 1 and Phase 2 fees, and we commit together to a minimum of twelve months.",
+    fee: "From $4,500 per month. Three-month minimum after Phase 2, or twelve-month minimum if you start from day one.",
     deliverables: [
-      "Weekly metric tracking sessions",
-      "System installation and training",
-      "Partnership activation support",
-      "90-Day Performance Report",
+      "Weekly metric tracking and iteration",
+      "Hands-on ownership of the live systems",
+      "Partnership activation and growth",
+      "Quarterly performance reviews",
     ],
     expanded: [
       {
-        area: "System Installation",
-        detail: "We work inside your operations to implement the systems. This means being present, hands-on, and accountable for the outcomes.",
-      },
-      {
-        area: "Team Training",
-        detail: "Systems only hold if the team understands and uses them. We run structured training sessions so your team owns the process after we leave.",
+        area: "Embedded Execution",
+        detail: "We stay inside your operations running the systems we built, present and accountable for the outcomes rather than handing you a dashboard and leaving.",
       },
       {
         area: "Metric Tracking",
-        detail: "Every week we review key indicators: conversion rate, average transaction value, repeat booking rate, review velocity. We use data to drive decisions.",
-      },
-      {
-        area: "90-Day Performance Report",
-        detail: "A full audit of what was implemented, what moved, what did not, and what the business looks like at the end of the engagement.",
-      },
-    ],
-  },
-  {
-    number: "04",
-    title: "Ongoing Partnership",
-    duration: "Ongoing",
-    selectivity: "Select clients only",
-    tagline: "Reserved for clients where the system is producing measurable revenue gains and continued embedded work compounds returns.",
-    description: "Some engagements continue past the 90-day performance report. Not all of them. Phase 4 is reserved for clients where the system we built is producing measurable revenue gains and where continued embedded work compounds returns rather than maintains them. This is an invitation, not a default.",
-    fee: "$4,000 to $7,000 per month. Invitation-based, post-engagement.",
-    deliverables: [
-      "Quarterly performance audit",
-      "Strategic advisory access",
-      "Priority response and scheduling",
-      "Annual revenue system review",
-    ],
-    expanded: [
-      {
-        area: "Strategic Oversight",
-        detail: "Continuous review of the revenue architecture we built together. We watch for drift, surface emerging gaps, and adjust the system as market conditions and your business shift.",
+        detail: "Every week we review the indicators that matter: conversion rate, average spend, repeat booking rate, review velocity. Data drives every decision.",
       },
       {
         area: "Quarterly Performance Reviews",
-        detail: "Structured deep-dives every three months covering pricing health, channel mix, partnership velocity, and conversion trends. Findings translate into a focused next-quarter action set.",
+        detail: "Structured deep-dives every three months across pricing health, channel mix, partnership velocity, and conversion trends, each producing a focused next-quarter action set.",
       },
       {
-        area: "Priority Access",
-        detail: "Direct line to the founder for strategic questions between reviews. Response times measured in hours rather than days, with scheduling priority over new engagements.",
-      },
-      {
-        area: "Selective Expansion",
-        detail: "As new revenue surfaces emerge — additional locations, new offerings, adjacent markets — we scope and architect them on a project basis rather than starting cold.",
+        area: "Day-One Takeover Option",
+        detail: "Prefer to hand us the whole engine from the start? We take over the full process on day one, you skip the Phase 1 and 2 fees, and we run it together on a twelve-month minimum.",
       },
     ],
-    dimmed: true,
   },
 ];
 
@@ -404,7 +370,7 @@ export default function MethodPage() {
               Start with the Diagnostic.
             </h2>
             <p className="font-body text-plum-deep/70 text-sm max-w-2xl">
-              $3,500. 15 days. Credited toward Phase 2 if you proceed. The rest follows from what we find.
+              $1,500. 15 days. Credited toward Phase 2 if you proceed. The rest follows from what we find.
             </p>
           </div>
           <Link

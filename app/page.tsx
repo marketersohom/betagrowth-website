@@ -25,14 +25,14 @@ const phases = [
   {
     number: "02",
     title: "System Architecture",
-    description: "We design the revenue systems your business should have been running from the start. Pricing, positioning, partnerships, operations.",
-    deliverable: "Growth Blueprint + Implementation Roadmap",
+    description: "We design the revenue systems your business should have been running, then build and install them alongside your team until they are live.",
+    deliverable: "Live revenue systems, designed and installed",
   },
   {
     number: "03",
-    title: "Execution & Integration",
-    description: "Hands-on build. We work alongside your team to install new systems, track metrics, and iterate until the numbers move.",
-    deliverable: "Live Systems + 90-Day Performance Report",
+    title: "Ongoing Partnership",
+    description: "We run the live system with you, tracking the numbers and compounding the gains. Continue after Phase 2, or hand us the whole engine from day one.",
+    deliverable: "Embedded execution + Quarterly performance reviews",
   },
 ];
 
@@ -410,7 +410,7 @@ export default function Home() {
               Find out where your revenue is going.
             </h2>
             <p className="font-body text-plum-deep/70 text-sm max-w-2xl">
-              15-day audit. Fixed fee of $3,500, credited in full toward Phase 2 if you proceed within 60 days. No ongoing commitment required.
+              15-day audit. Fixed fee of $1,500, credited in full toward Phase 2 if you proceed within 60 days. No ongoing commitment required.
             </p>
           </div>
           <MagneticButton
