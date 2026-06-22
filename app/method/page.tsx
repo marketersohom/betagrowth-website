@@ -25,9 +25,9 @@ const phases: Phase[] = [
     duration: "15 days",
     tagline: "A 15-day audit of your full revenue system. We find where money is being lost before recommending anything.",
     description: "The Diagnostic is the foundation of everything. We do not guess at problems or rely on your instincts about where revenue is lost. We audit 12 specific areas systematically, interview stakeholders, and examine your data. The output is a specific, ranked list of revenue gaps.",
-    fee: "$1,500, fixed. Credited in full against Phase 2 if you proceed within 60 days of delivery.",
+    fee: "$3,500, fixed. Credited in full against Phase 2 if you proceed within 60 days of delivery.",
     deliverables: [
-      "Revenue Leak Report (30 to 50 pages)",
+      "Revenue Leak Report",
       "Priority Matrix — ranked by impact and effort",
       "90-Day Action Plan",
       "Delivery call with full walkthrough",
@@ -57,7 +57,7 @@ const phases: Phase[] = [
     duration: "6 to 10 weeks",
     tagline: "We design the revenue systems your business should be running, then build and install them alongside your team until they are live.",
     description: "Once the Diagnostic is complete, we design the full revenue system your business should be running, then we build it and install it. This is not a document handed over at the door. We work inside your operations to stand up pricing models, channel strategy, conversion infrastructure, and partnership frameworks, and we do not stop at the blueprint. The system goes live before we are done.",
-    fee: "$4,000 to $7,000, fixed. Scoped from Diagnostic findings. Covers both design and installation.",
+    fee: "$8,000 to $15,000, fixed. Scoped from Diagnostic findings. Covers both design and installation.",
     deliverables: [
       "Revenue System Blueprint",
       "Pricing & packaging redesign, installed",
@@ -88,8 +88,8 @@ const phases: Phase[] = [
     title: "Ongoing Partnership",
     duration: "Monthly",
     tagline: "We run the revenue system with you, tracking the numbers and compounding the gains month over month.",
-    description: "Ongoing Partnership is where the system keeps producing. There are two ways in. Continue after Phase 2 on a three-month minimum, or start here from day one: we take over the full process from the start, you skip the Phase 1 and Phase 2 fees, and we commit together to a minimum of twelve months.",
-    fee: "From $4,500 per month. Three-month minimum after Phase 2, or twelve-month minimum if you start from day one.",
+    description: "Ongoing Partnership is where the system keeps producing. There are two ways in. Continue after Phase 2 on a six-month minimum, or start here from day one: we take over the full process from the start, you skip the Phase 1 and Phase 2 fees, and we commit together to a minimum of fourteen months.",
+    fee: "From $5,000 to $7,500 per month. 6-month minimum after Phase 2, or 14-month minimum if you start from day one.",
     deliverables: [
       "Weekly metric tracking and iteration",
       "Hands-on ownership of the live systems",
@@ -111,7 +111,7 @@ const phases: Phase[] = [
       },
       {
         area: "Day-One Takeover Option",
-        detail: "Prefer to hand us the whole engine from the start? We take over the full process on day one, you skip the Phase 1 and 2 fees, and we run it together on a twelve-month minimum.",
+        detail: "Prefer to hand us the whole engine from the start? We take over the full process on day one, you skip the Phase 1 and 2 fees, and we run it together on a fourteen-month minimum.",
       },
     ],
   },
@@ -370,7 +370,7 @@ export default function MethodPage() {
               Start with the Diagnostic.
             </h2>
             <p className="font-body text-plum-deep/70 text-sm max-w-2xl">
-              $1,500. 15 days. Credited toward Phase 2 if you proceed. The rest follows from what we find.
+              $3,500. 15 days. Credited toward Phase 2 if you proceed. The rest follows from what we find.
             </p>
           </div>
           <Link

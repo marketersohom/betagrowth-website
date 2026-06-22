@@ -481,7 +481,7 @@ export default function RevenueLeakArchitecturePage() {
               Find out where your revenue is going.
             </h2>
             <p className="font-body text-plum-deep/70 text-sm max-w-2xl">
-              15-day audit. Fixed fee of $1,500, credited in full toward Phase 2
+              15-day audit. Fixed fee of $3,500, credited in full toward Phase 2
               if you proceed within 60 days. No ongoing commitment required.
             </p>
           </div>

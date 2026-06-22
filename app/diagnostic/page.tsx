@@ -25,7 +25,7 @@ const deliverables = [
     number: "01",
     title: "Revenue Leak Report",
     description: "A complete audit across 12 areas identifying exactly where and how much revenue your business is losing. Specific findings, not general recommendations.",
-    detail: "30 to 50 pages. Formatted for decision-making, not reading.",
+    detail: "Formatted for decision-making, not reading.",
   },
   {
     number: "02",
@@ -119,7 +119,7 @@ export default function DiagnosticPage() {
           >
             <p className="font-body text-xs text-gold tracking-[0.2em] uppercase mb-4">Fixed Fee</p>
             <div className="font-display text-cream leading-none mb-2" style={{ fontSize: "3rem" }}>
-              $1,500
+              $3,500
             </div>
             <p className="font-body text-cream/40 text-sm mb-6">USD. Credited in full toward Phase 2 if you proceed within 60 days.</p>
             <div className="space-y-3 mb-8">
@@ -255,7 +255,7 @@ export default function DiagnosticPage() {
               Start with the Diagnostic.
             </h2>
             <p className="font-body text-plum-deep/70 text-sm max-w-2xl">
-              $1,500. 15 days. Credited toward Phase 2 if you proceed. One decision to make.
+              $3,500. 15 days. Credited toward Phase 2 if you proceed. One decision to make.
             </p>
           </div>
           <Link
