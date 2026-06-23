@@ -119,7 +119,7 @@ export default function DiagnosticPage() {
           >
             <p className="font-body text-xs text-gold tracking-[0.2em] uppercase mb-4">Fixed Fee</p>
             <div className="font-display text-cream leading-none mb-2" style={{ fontSize: "3rem" }}>
-              $3,500
+              $2,500
             </div>
             <p className="font-body text-cream/40 text-sm mb-6">USD. Credited in full toward Phase 2 if you proceed within 60 days.</p>
             <div className="space-y-3 mb-8">
@@ -255,7 +255,7 @@ export default function DiagnosticPage() {
               Start with the Diagnostic.
             </h2>
             <p className="font-body text-plum-deep/70 text-sm max-w-2xl">
-              $3,500. 15 days. Credited toward Phase 2 if you proceed. One decision to make.
+              $2,500. 15 days. Credited toward Phase 2 if you proceed. One decision to make.
             </p>
           </div>
           <Link

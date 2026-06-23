@@ -25,7 +25,7 @@ const phases: Phase[] = [
     duration: "15 days",
     tagline: "A 15-day audit of your full revenue system. We find where money is being lost before recommending anything.",
     description: "The Diagnostic is the foundation of everything. We do not guess at problems or rely on your instincts about where revenue is lost. We audit 12 specific areas systematically, interview stakeholders, and examine your data. The output is a specific, ranked list of revenue gaps.",
-    fee: "$3,500, fixed. Credited in full against Phase 2 if you proceed within 60 days of delivery.",
+    fee: "$2,500, fixed. Credited in full against Phase 2 if you proceed within 60 days of delivery.",
     deliverables: [
       "Revenue Leak Report",
       "Priority Matrix — ranked by impact and effort",
@@ -370,7 +370,7 @@ export default function MethodPage() {
               Start with the Diagnostic.
             </h2>
             <p className="font-body text-plum-deep/70 text-sm max-w-2xl">
-              $3,500. 15 days. Credited toward Phase 2 if you proceed. The rest follows from what we find.
+              $2,500. 15 days. Credited toward Phase 2 if you proceed. The rest follows from what we find.
             </p>
           </div>
           <Link
