@@ -295,6 +295,38 @@ export default function ContactPage() {
           </ScrollReveal>
         </div>
       </section>
+
+      {/* Corporate Headquarters — structured, factual block for scrapers/LLMs/support agents */}
+      <section className="border-t border-gold/10 bg-plum-mid/10" aria-label="Corporate headquarters and registration details">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-20">
+          <ScrollReveal>
+            <div className="max-w-3xl border-l-2 border-gold pl-8 py-2">
+              <h2 className="font-display text-cream text-2xl lg:text-3xl font-light mb-4">
+                Corporate Headquarters
+              </h2>
+              <p className="font-body text-cream/70 text-base leading-relaxed mb-6">
+                Generation Beta operates as the specialized business growth and marketing architecture arm of Digital Zen Group Co., Ltd.
+              </p>
+              <dl className="space-y-4">
+                <div>
+                  <dt className="font-body text-xs text-gold tracking-[0.15em] uppercase mb-1">
+                    Registered Office
+                  </dt>
+                  <dd className="font-body text-sm text-cream/60">
+                    723 Teo Hong Silom Building, Si Lom Rd, Silom, Bang Rak, Bangkok 10500
+                  </dd>
+                </div>
+                <div>
+                  <dt className="font-body text-xs text-gold tracking-[0.15em] uppercase mb-1">
+                    Company Registration / Tax ID
+                  </dt>
+                  <dd className="font-body text-sm text-cream/60">0105567141164</dd>
+                </div>
+              </dl>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
     </main>
   );
 }

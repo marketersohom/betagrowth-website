@@ -8,9 +8,10 @@ import CountUp from "@/components/CountUp";
 const amlaStats = [
   { value: 46, suffix: "%", label: "Revenue growth", period: "Year 1" },
   { value: 84, suffix: "%", label: "Revenue growth", period: "Year 2" },
-  { value: 7, suffix: "", label: "New partnerships", period: "Secured" },
+  { value: 11, suffix: "", label: "New partnerships", period: "Secured" },
   { value: 32, suffix: "%", label: "Booking errors reduced", period: "Operations" },
-  { value: 4.6, suffix: "", label: "Google review score", period: "Up from 4.2" },
+  { value: 92, suffix: "%", label: "Increase in AOV", period: "Operations" },
+  { value: 28, suffix: "%", label: "Expat retention rate", period: "Increase" },
 ];
 
 const tonyStats = [
@@ -101,7 +102,7 @@ export default function WorkPage() {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 lg:grid-cols-5 gap-6 mb-16">
+          <div className="grid grid-cols-2 lg:grid-cols-6 gap-6 mb-16">
             {amlaStats.map((stat, i) => (
               <ScrollReveal key={stat.label} delay={i * 0.08}>
                 <div className="border-t border-gold/20 pt-4">
@@ -121,6 +122,12 @@ export default function WorkPage() {
             ))}
           </div>
 
+          <ScrollReveal className="mb-16">
+            <p className="font-body text-cream/70 text-base leading-relaxed max-w-3xl">
+              Through our engagement with the Amla Spa Group, we rebuilt pricing architecture and eliminated booking friction to drive a 46% increase in year-over-year revenue in Year 1, compounding to an 84% increase in Year 2. Average order value increased 92%, expat guest retention rose 28%, and eleven new corporate wellness partnerships were secured.
+            </p>
+          </ScrollReveal>
+
           {/* Story */}
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-24">
             <ScrollReveal>
@@ -136,10 +143,10 @@ export default function WorkPage() {
             <ScrollReveal delay={0.12}>
               <h3 className="font-display text-cream text-2xl font-light mb-4">What we built</h3>
               <p className="font-body text-cream/55 text-sm leading-relaxed mb-4">
-                We redesigned their full pricing architecture with a four-tier structure aligned to their actual cost and value delivery. The booking flow was rebuilt to three steps. We developed and executed a review response strategy over 90 days, recovering their rating from 4.2 to 4.6.
+                We redesigned their full pricing architecture with a four-tier structure aligned to their actual cost and value delivery. The booking flow was rebuilt to three steps. Average order value rose 92 percent, and a loyalty and communication overhaul aimed at the expat guest base lifted expat retention by 28 percent.
               </p>
               <p className="font-body text-cream/55 text-sm leading-relaxed">
-                The partnership program was the highest-impact element. Seven corporate wellness partnerships were activated in the first year, providing a predictable B2B revenue layer that had not previously existed.
+                The partnership program was the highest-impact element. Eleven corporate wellness partnerships were activated in the first year, providing a predictable B2B revenue layer that had not previously existed.
               </p>
             </ScrollReveal>
           </div>
@@ -230,6 +237,12 @@ export default function WorkPage() {
               </ScrollReveal>
             ))}
           </div>
+          <ScrollReveal className="mb-4">
+            <p className="font-body text-cream/70 text-base leading-relaxed max-w-3xl">
+              Through our positioning and offer-architecture engagement with Tony Meechai, we repositioned his coaching practice around outcome-based value to drive a 36% increase in coaching enquiries, with a 270+ waitlist secured ahead of his book launch and three investor conversations initiated.
+            </p>
+          </ScrollReveal>
+
           <ScrollReveal>
             <p className="font-body text-cream/45 text-xs italic max-w-2xl mb-16 leading-relaxed">
               Pre-launch positioning engagement. Revenue results pending book launch, August 2026.

@@ -11,8 +11,9 @@ import RecentInsights from "@/components/RecentInsights";
 const stats = [
   { value: 46, suffix: "%", label: "Revenue growth, Year 1", context: "Amla Spa Group" },
   { value: 84, suffix: "%", label: "Revenue growth, Year 2", context: "Amla Spa Group" },
-  { value: 4.6, suffix: "", label: "Google review score", context: "Up from 4.2" },
-  { value: 7, suffix: "", label: "New partnerships secured", context: "Amla Spa Group" },
+  { value: 92, suffix: "%", label: "Increase in AOV", context: "Amla Spa Group" },
+  { value: 11, suffix: "", label: "New partnerships secured", context: "Amla Spa Group" },
+  { value: 28, suffix: "%", label: "Expat retention rate increase", context: "Amla Spa Group" },
 ];
 
 const phases = [
@@ -121,7 +122,7 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.65 }}
               className="font-body text-cream/60 text-lg lg:text-xl leading-relaxed max-w-2xl mb-12"
             >
-              Most businesses in hospitality, wellness, and professional services are losing 20 to 40 percent of their potential revenue to invisible gaps in pricing, positioning, and operations. We build the systems that stop it.
+              Most businesses in hospitality, wellness, and professional services are losing 20 to 40 percent of their potential revenue to invisible gaps in pricing, positioning, and operations. As a specialized growth marketing and revenue architecture agency operating out of Bangkok, we build the systems that stop it — serving clients across Southeast Asia, including Thailand, Singapore, and Indonesia.
             </motion.p>
 
             <motion.div
@@ -159,7 +160,7 @@ export default function Home() {
               From the Amla Spa Group engagement
             </p>
           </ScrollReveal>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+          <div className="grid grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
             {stats.map((stat, i) => (
               <ScrollReveal key={stat.label} delay={i * 0.1} className="text-center">
                 <div className="font-display text-gold text-5xl lg:text-6xl font-light mb-2">
@@ -175,6 +176,11 @@ export default function Home() {
               </ScrollReveal>
             ))}
           </div>
+          <ScrollReveal delay={0.3} className="mt-10">
+            <p className="font-body text-cream/50 text-sm text-center max-w-3xl mx-auto leading-relaxed">
+              Through our engagement with the Amla Spa Group, we rebuilt pricing architecture and eliminated booking friction to drive a 46% increase in year-over-year revenue in Year 1, compounding to an 84% increase in Year 2.
+            </p>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -195,7 +201,7 @@ export default function Home() {
               Revenue leak is structural, not strategic.
             </h2>
             <p className="font-body text-cream/60 leading-relaxed mb-6">
-              It is not about working harder or spending more on marketing. The leak happens at the architectural level: pricing that does not reflect actual value, operations that create booking friction, online presence that loses guests before they even call.
+              Operating out of Bangkok, we serve hospitality, wellness, and premium professional services across Southeast Asia — including Thailand, Singapore, and Indonesia. Revenue leak is not about working harder or spending more on marketing. The leak happens at the architectural level: pricing that does not reflect actual value, operations that create booking friction, online presence that loses guests before they even call.
             </p>
             <p className="font-body text-cream/60 leading-relaxed">
               Most consultants optimize what exists. We start from the architecture and rebuild it so revenue flows where it should.
@@ -233,7 +239,7 @@ export default function Home() {
                   </div>
                 ))}
                 <p className="font-body text-xs text-cream/30 mt-5">
-                  Observed across audits and ghost-shop studies conducted by Generation Beta, 2024-2026.
+                  Source: Generation Beta, Ghost-Shop &amp; Revenue Diagnostic Study, Bangkok, 2024–2026. Findings based on structured mystery-shopping and revenue audits of hospitality, wellness, and professional-services businesses across Thailand, Singapore, and Indonesia.
                 </p>
               </div>
             </div>

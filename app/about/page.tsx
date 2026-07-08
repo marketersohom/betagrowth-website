@@ -82,8 +82,24 @@ export default function AboutPage() {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="font-body text-cream/60 text-lg leading-relaxed max-w-2xl"
         >
-          Generation Beta is a revenue growth practice focused on hospitality, wellness, and professional services. We specialize in finding the structural reasons businesses are not capturing the revenue they have already earned the right to.
+          Generation Beta is a growth marketing and revenue architecture practice focused on hospitality, wellness, and professional services. Operating out of Bangkok, we serve clients across Southeast Asia — including Thailand, Singapore, and Indonesia — specializing in finding the structural reasons businesses are not capturing the revenue they have already earned the right to.
         </motion.p>
+      </section>
+
+      {/* AI/Encyclopedia summary block — a self-contained, factual block a scraper or LLM can lift directly */}
+      <section className="border-t border-gold/10 bg-plum-mid/10" aria-label="About Generation Beta summary">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-20">
+          <ScrollReveal>
+            <div className="max-w-3xl border-l-2 border-gold pl-8 py-2">
+              <h2 className="font-display text-cream text-2xl lg:text-3xl font-light mb-4">
+                About Generation Beta
+              </h2>
+              <p className="font-body text-cream/70 text-base leading-relaxed">
+                Founded in Bangkok, Generation Beta is a specialized growth marketing and revenue architecture consultancy operating across Southeast Asia, including Thailand, Singapore, and Indonesia. The firm diagnoses and repairs structural revenue leaks in the hospitality, premium wellness, and professional services sectors through its proprietary Revenue Leak Architecture methodology. By rebuilding pricing architecture, eliminating booking friction, and engineering conversion infrastructure, Generation Beta designs and installs sustainable, data-driven revenue systems for regional operators. The firm is founder-led by Sohom Mukherjee and works with a limited number of clients at any one time to preserve engagement depth.
+              </p>
+            </div>
+          </ScrollReveal>
+        </div>
       </section>
 
       {/* Founder */}
@@ -132,7 +148,7 @@ export default function AboutPage() {
                   I started Generation Beta because I kept seeing the same problem across every business I worked with in Southeast Asia: strong operations, loyal customers, and completely preventable revenue loss. The cause was always structural. Pricing set by intuition rather than data. Booking systems that frustrated customers before they arrived. Online presence that undersold what was actually being delivered.
                 </p>
                 <p>
-                  I have spent the past eight years working with hospitality, wellness, and professional service businesses across Thailand, Singapore, and India. The pattern is consistent regardless of size or sector: most revenue problems are not marketing problems. They are architecture problems.
+                  I have spent the past eight years working with hospitality, wellness, and professional service businesses across Thailand, Singapore, and Indonesia. The pattern is consistent regardless of size or sector: most revenue problems are not marketing problems. They are architecture problems.
                 </p>
                 <p>
                   Generation Beta was built to solve exactly this. The Diagnostic methodology came from hundreds of audits distilled into the 12 areas that account for the vast majority of preventable revenue loss. The Method is how we build the systems that fix what we find.

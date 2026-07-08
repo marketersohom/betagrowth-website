@@ -34,11 +34,21 @@ export default function CountUp({
     return () => controls.stop();
   }, [isInView, end, duration, count]);
 
+  const formatted = decimals > 0 ? end.toFixed(decimals) : Math.round(end).toString();
+
   return (
     <span ref={ref}>
-      {prefix}
-      <motion.span>{rounded}</motion.span>
-      {suffix}
+      {/* Real number as static text — CountUp animates from 0, which would otherwise be the only value crawlers/screen readers ever see. */}
+      <span className="sr-only">
+        {prefix}
+        {formatted}
+        {suffix}
+      </span>
+      <span aria-hidden="true">
+        {prefix}
+        <motion.span>{rounded}</motion.span>
+        {suffix}
+      </span>
     </span>
   );
 }

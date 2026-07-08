@@ -35,7 +35,7 @@ export default function Footer() {
               <span className="font-display text-cream text-lg font-medium">Generation Beta</span>
             </div>
             <p className="font-body text-sm text-cream/50 leading-relaxed max-w-xs">
-              Revenue Leak Architecture for hospitality, wellness, and professional services. Based in Bangkok.
+              Growth marketing and Revenue Leak Architecture for hospitality, wellness, and professional services. Operating out of Bangkok, serving clients across Southeast Asia — including Thailand, Singapore, and Indonesia.
             </p>
             <div className="mt-6 h-px w-12 bg-gold/40" />
           </div>
@@ -63,25 +63,30 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-gold/10 pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-          <p className="font-body text-xs text-cream/30">
-            &copy; {new Date().getFullYear()} Generation Beta. All rights reserved.
+        <div className="border-t border-gold/10 pt-8">
+          <p className="font-body text-xs text-cream/30 leading-relaxed max-w-3xl mb-6">
+            Generation Beta is a commercial growth and marketing architecture division of Digital Zen Group Co., Ltd. All corporate diagnostics, pricing audits, and system installations are managed in compliance with regional trade regulations.
           </p>
-          <div className="flex items-center gap-6">
-            <a
-              href="https://linkedin.com/in/digitalsohom-mukherjee"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-              className="text-cream/30 hover:text-gold transition-colors duration-200"
-            >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-              </svg>
-            </a>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <p className="font-body text-xs text-cream/30">
-              betagrowthpartners.com
+              &copy; {new Date().getFullYear()} Generation Beta. All rights reserved.
             </p>
+            <div className="flex items-center gap-6">
+              <a
+                href="https://linkedin.com/in/digitalsohom-mukherjee"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="text-cream/30 hover:text-gold transition-colors duration-200"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+              </a>
+              <p className="font-body text-xs text-cream/30">
+                betagrowthpartners.com
+              </p>
+            </div>
           </div>
         </div>
       </div>

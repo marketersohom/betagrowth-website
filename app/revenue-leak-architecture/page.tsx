@@ -263,9 +263,11 @@ export default function RevenueLeakArchitecturePage() {
         </div>
 
         <p className="font-body text-cream/30 text-xs mt-6 italic">
-          Five leak categories, refined through direct operator work and
-          structured ghost-shop studies across hospitality, wellness, and
-          professional services.
+          Source: Generation Beta, Ghost-Shop &amp; Revenue Diagnostic Study,
+          Bangkok, 2024–2026. Five leak categories, refined through direct
+          operator work and structured ghost-shop studies across hospitality,
+          wellness, and professional services in Thailand, Singapore, and
+          Indonesia.
         </p>
       </section>
 
@@ -337,8 +339,10 @@ export default function RevenueLeakArchitecturePage() {
             <p className="font-body text-cream/60 leading-relaxed max-w-2xl text-lg">
               The framework comes out of direct operator work and structured
               ghost-shopping across hospitality, wellness, and professional
-              services in Southeast Asia. In the Amla Spa Group engagement,
-              closing these leaks produced measurable, compounding growth.
+              services in Southeast Asia, including Thailand, Singapore, and
+              Indonesia. In the Amla Spa Group engagement, closing these
+              leaks drove a 46% increase in year-over-year revenue in Year 1,
+              compounding to 84% in Year 2.
             </p>
           </ScrollReveal>
 
