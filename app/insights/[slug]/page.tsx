@@ -4,6 +4,7 @@ import Image from "next/image";
 import { PortableText } from "@portabletext/react";
 import { getPost, getPostSlugs, urlFor } from "@/lib/sanity";
 import type { Metadata } from "next";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const revalidate = 60;
 
@@ -127,8 +128,43 @@ export default async function PostPage({
   const post = await getPost(params.slug);
   if (!post) notFound();
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.publishedAt,
+    author: {
+      "@type": "Person",
+      name: post.author,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Generation Beta",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://betagrowthpartners.com/logo.png",
+      },
+    },
+    ...(post.mainImage
+      ? { image: urlFor(post.mainImage).width(1600).url() }
+      : {}),
+    mainEntityOfPage: `https://betagrowthpartners.com/insights/${params.slug}`,
+  };
+
   return (
     <main className="pt-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Insights", href: "/insights" },
+          { name: post.title, href: `/insights/${params.slug}` },
+        ]}
+      />
       {/* Hero */}
       <section className="max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-24">
         <Link

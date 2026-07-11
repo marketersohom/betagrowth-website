@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { getPosts } from "@/lib/sanity";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const revalidate = 60;
+
+export const metadata: Metadata = {
+  title: "Insights | Original research on revenue leaks — Generation Beta",
+  description: "Field notes from live audits and ghost-shop research across Southeast Asian hospitality and wellness businesses. Published when there's something worth saying.",
+};
 
 function formatDate(dateString: string) {
   return new Date(dateString).toLocaleDateString("en-US", {
@@ -16,6 +23,7 @@ export default async function InsightsPage() {
 
   return (
     <main className="pt-20">
+      <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Insights", href: "/insights" }]} />
       <section className="max-w-7xl mx-auto px-6 lg:px-12 py-24 lg:py-32">
         {/* Header */}
         <div className="flex items-center gap-3 mb-8">

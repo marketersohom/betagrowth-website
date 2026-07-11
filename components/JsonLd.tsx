@@ -11,8 +11,15 @@ const schema = {
     "Generation Beta is a growth marketing and revenue architecture agency operating out of Bangkok, serving hospitality, wellness, and premium professional services businesses across Southeast Asia — including Thailand, Singapore, and Indonesia. We specialize in Revenue Leak Architecture: locating structural revenue loss in pricing, booking conversion, and online reputation, then designing and installing the systems that stop it.",
   address: {
     "@type": "PostalAddress",
+    streetAddress: "723 Teo Hong Silom Building, Si Lom Rd, Silom, Bang Rak",
     addressLocality: "Bangkok",
+    postalCode: "10500",
     addressCountry: "TH",
+  },
+  taxID: "0105567141164",
+  parentOrganization: {
+    "@type": "Organization",
+    name: "Digital Zen Group Co., Ltd.",
   },
   geo: {
     "@type": "GeoCoordinates",
