@@ -90,7 +90,7 @@ const categoryFields = {
   Monetization: [
     {
       name: "Pricing architecture",
-      description: "We compare your prices against cost of delivery, competitor positioning, and willingness-to-pay signals to surface where you are undercharging.",
+      description: "We build spa pricing architecture and room-rate models by comparing your prices against cost of delivery, competitor positioning, and willingness-to-pay signals to surface where you are undercharging.",
       outcome: "Exact price points to change, and by how much.",
     },
     {
@@ -112,7 +112,7 @@ const categoryFields = {
     },
     {
       name: "Booking & checkout flow",
-      description: "Every step between intent and confirmation is mapped to find the friction that silently kills conversion.",
+      description: "Every step between intent and confirmation is mapped to find the direct booking conversion friction that silently kills revenue.",
       outcome: "A specific list of where and why prospective guests drop off before booking.",
     },
     {
@@ -124,7 +124,7 @@ const categoryFields = {
   "Retention & Lifetime Value": [
     {
       name: "Retention & repeat revenue",
-      description: "We track what happens after the first visit, whether guests come back, how often, and why the ones who don't leave money on the table permanently.",
+      description: "As part of a broader hospitality retention strategy, we track what happens after the first visit, whether guests come back, how often, and why the ones who don't leave money on the table permanently.",
       outcome: "A clear retention baseline and the specific interventions that move it.",
     },
     {
@@ -148,7 +148,7 @@ const categoryFields = {
   "Partnerships & Distribution": [
     {
       name: "Partnership & referral architecture",
-      description: "We surface the high-leverage B2B and referral relationships you are not capturing and structure them for systematic, predictable revenue.",
+      description: "Through hotel partnership channel optimization, we surface the high-leverage B2B and referral relationships you are not capturing and structure them for systematic, predictable revenue.",
       outcome: "A structured list of untapped partnership and referral channels.",
     },
   ],
@@ -203,10 +203,10 @@ export default function FrameworkClient() {
               transition={{ duration: 0.6, delay: 0.55 }}
               className="font-body text-cream/60 text-lg leading-relaxed max-w-2xl mb-12"
             >
-              Revenue Leak Architecture is the framework we use to find the
-              structural gaps that drain 20 to 40 percent of potential revenue
-              from hospitality, wellness, and professional services businesses,
-              then rebuild the systems that close them.
+              Revenue Leak Architecture is the hotel revenue audit framework we
+              use to find the structural gaps that drain 20 to 40 percent of
+              potential revenue from hospitality, wellness, and professional
+              services businesses, then rebuild the systems that close them.
             </motion.p>
 
             <motion.div
@@ -344,12 +344,17 @@ export default function FrameworkClient() {
             </span>
           </div>
           <h2
-            className="font-display text-cream leading-[1.05] mb-16 max-w-3xl"
+            className="font-display text-cream leading-[1.05] mb-6 max-w-3xl"
             style={{ fontSize: "clamp(2rem, 4vw, 3.2rem)" }}
           >
             Revenue leaks in six places. Most businesses are losing in at least
             three.
           </h2>
+          <p className="font-body text-cream/55 text-base lg:text-lg leading-relaxed max-w-2xl mb-10">
+            From spa pricing architecture to direct booking conversion friction
+            and hotel partnership channel optimization, each category below is
+            a distinct place structural revenue goes missing.
+          </p>
         </ScrollReveal>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-gold/15 border border-gold/15">
@@ -382,9 +387,10 @@ export default function FrameworkClient() {
 
         <p className="font-body text-cream/30 text-xs mt-6 italic">
           Source: Generation Beta, Ghost-Shop &amp; Revenue Diagnostic Study,
-          Bangkok, 2024–2026. Findings based on structured mystery-shopping and
-          revenue audits across hospitality, wellness, and professional
-          services in Thailand, Singapore, and Indonesia. Delivery & Execution
+          Bangkok, 2024–2026. Findings based on structured wellness
+          mystery-shopping audits and hotel revenue audits across hospitality,
+          wellness, and professional services in Thailand, Singapore, and
+          Indonesia. Delivery & Execution
           has no research backing yet and is shown without a stat until a
           dedicated audit pass covers it.
         </p>

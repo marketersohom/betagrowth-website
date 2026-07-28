@@ -3,8 +3,8 @@ import FrameworkClient from "./FrameworkClient";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "The Revenue Leak Architecture framework | 6 categories, 14 fields",
-  description: "The complete framework behind Generation Beta's Diagnostic. Six categories, fourteen audit fields, built from direct operator work and structured ghost-shop research across Southeast Asian hospitality and wellness businesses.",
+  title: "The hotel revenue audit framework | 6 categories, 14 fields",
+  description: "The complete hotel revenue audit framework behind Generation Beta's Diagnostic — spa pricing architecture, direct booking conversion friction, and partnership channel gaps across six categories and fourteen audit fields, built from direct operator work and structured wellness mystery-shopping research across Southeast Asian hospitality businesses.",
 };
 
 export default function RevenueLeakArchitecturePage() {

@@ -3,8 +3,8 @@ import AboutClient from "./AboutClient";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "About Sohom Mukherjee, founder — Generation Beta",
-  description: "Generation Beta is founder-led by Sohom Mukherjee, working with a limited number of hospitality, wellness, and professional services clients across Southeast Asia at any one time.",
+  title: "About Sohom Mukherjee, hospitality growth consultant & founder — Generation Beta",
+  description: "Generation Beta, hospitality growth consultants and commercial revenue architects based in Bangkok, Thailand. Founder-led by Sohom Mukherjee, working with a limited number of hospitality, wellness, and professional services clients across Southeast Asia at any one time.",
 };
 
 const personSchema = {

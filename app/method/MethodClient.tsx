@@ -23,7 +23,7 @@ const phases: Phase[] = [
     number: "01",
     title: "Revenue Diagnostic",
     duration: "15 days",
-    tagline: "A 15-day audit of your full revenue system. We find where money is being lost before recommending anything.",
+    tagline: "A 15-day hospitality revenue audit and hotel growth diagnostic of your full revenue system. We find where money is being lost before recommending anything.",
     description: "The Diagnostic is the foundation of everything. We do not guess at problems or rely on your instincts about where revenue is lost. We audit 14 fields across six categories systematically, interview stakeholders, and examine your data. The output is a specific, ranked list of revenue gaps.",
     fee: "$2,500, fixed. Credited in full against Phase 2 if you proceed within 60 days of delivery. We only move to System Architecture when the Diagnostic identifies at least 3x the proposed Architecture fee in addressable leak value — if it doesn't, we say so, and the engagement stops there.",
     deliverables: [
@@ -56,7 +56,7 @@ const phases: Phase[] = [
     title: "System Architecture",
     duration: "6 to 10 weeks",
     tagline: "We design the revenue systems your business should be running, then build and install them alongside your team until they are live.",
-    description: "System Architecture takes the Priority Matrix from your Diagnostic and builds the highest-ROI fixes first. Engagements are scoped to 3 to 5 modules by default, priced per module, sequenced by dependency and impact, not sold as an open-ended rebuild. Modules from $800, most engagements $6,000 to $14,000. Typical timeline 6 to 10 weeks depending on modules selected.",
+    description: "System Architecture takes the Priority Matrix from your Diagnostic and builds the highest-ROI fixes first as a full revenue management implementation, built around a pricing architecture framework rather than a generic rebuild. Engagements are scoped to 3 to 5 modules by default, priced per module, sequenced by dependency and impact, not sold as an open-ended rebuild. Modules from $800, most engagements $6,000 to $14,000. Typical timeline 6 to 10 weeks depending on modules selected.",
     fee: "Modules from $800, most engagements $6,000 to $14,000. Scoped per module from Diagnostic findings.",
     deliverables: [
       "Revenue System Blueprint",
@@ -171,13 +171,13 @@ export default function MethodClient() {
           className="font-body text-cream/60 text-lg leading-relaxed max-w-2xl space-y-5"
         >
           <p>
-            Revenue Leak Architecture is our framework for finding structural revenue gaps and rebuilding the systems that close them.
+            Revenue Leak Architecture is our hospitality revenue audit and pricing architecture framework for finding structural revenue gaps and rebuilding the systems that close them.
           </p>
           <p>
-            Three phases that follow a deliberate sequence. You cannot effectively redesign a revenue system without first understanding where it is broken. The Diagnostic is not optional.
+            Three phases that follow a deliberate sequence. You cannot effectively redesign a revenue system without first running the hotel growth diagnostic to understand where it is broken. The Diagnostic is not optional.
           </p>
           <p>
-            Engagements are scoped, fixed-fee, and sequenced. A small number of clients continue past Phase 3 into ongoing partnership.
+            Engagements are scoped, fixed-fee, and sequenced — the same wellness business consulting process we run for Southeast Asia hotel consultants and resort operators. A small number of clients continue past Phase 3 into ongoing partnership.
           </p>
         </motion.div>
       </section>

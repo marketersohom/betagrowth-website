@@ -7,7 +7,7 @@ export const revalidate = 60;
 
 export const metadata: Metadata = {
   title: "Insights | Original research on revenue leaks — Generation Beta",
-  description: "Field notes from live audits and ghost-shop research across Southeast Asian hospitality and wellness businesses. Published when there's something worth saying.",
+  description: "Field notes on spa pricing strategy, hotel direct booking strategy, and expat retention, drawn from live audits and ghost-shop research across Southeast Asian hospitality and wellness businesses. Published when there's something worth saying.",
 };
 
 function formatDate(dateString: string) {
@@ -41,7 +41,7 @@ export default async function InsightsPage() {
         </h1>
 
         <p className="font-body text-cream/60 text-lg leading-relaxed max-w-2xl mb-20">
-          Writing on revenue architecture, growth systems, and premium brand strategy. Published when there is something worth saying.
+          Writing on spa pricing strategy, hotel direct booking strategy, and expat marketing strategy for hospitality and wellness operators across Bangkok and Southeast Asia. Published when there is something worth saying.
         </p>
 
         {/* Posts */}

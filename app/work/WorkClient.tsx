@@ -49,6 +49,14 @@ export default function WorkClient() {
           <em className="text-gold not-italic">works.</em>
         </motion.h1>
 
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+          className="font-body text-cream/60 text-lg leading-relaxed max-w-2xl"
+        >
+          Hospitality growth case studies with real numbers. A luxury spa revenue case study, a resort AOV optimization story, and hotel marketing results across Southeast Asia, all from live revenue architecture engagements.
+        </motion.p>
       </section>
 
       {/* Amla Spa Group */}
@@ -67,6 +75,9 @@ export default function WorkClient() {
               >
                 Amla Spa Group
               </h2>
+              <p className="font-body text-gold/80 text-sm tracking-wide mb-5">
+                Luxury spa revenue case study: +84% revenue growth through spa pricing architecture &amp; booking optimization
+              </p>
               <div className="flex flex-wrap gap-2 mb-6">
                 {["Wellness & Spa", "Thailand", "Revenue Architecture", "Operations"].map((tag) => (
                   <span key={tag} className="font-body text-xs text-cream/40 border border-cream/10 px-3 py-1">
@@ -75,7 +86,7 @@ export default function WorkClient() {
                 ))}
               </div>
               <p className="font-body text-cream/60 text-sm leading-relaxed">
-                Amla Spa Group came to us at a plateau. Three locations, strong reputation, high utilization, and flat revenue. The issue was not their service quality. It was that their pricing, operations, and online presence were not structured to capture the value they were already delivering.
+                Amla Spa Group came to us at a plateau. Three locations, strong reputation, high utilization, and flat revenue. The issue was not their service quality. It was that their spa pricing strategy, operations, and online presence were not structured to capture the value they were already delivering.
               </p>
             </ScrollReveal>
 
@@ -143,7 +154,7 @@ export default function WorkClient() {
             <ScrollReveal delay={0.12}>
               <h3 className="font-display text-cream text-2xl font-light mb-4">What we built</h3>
               <p className="font-body text-cream/55 text-sm leading-relaxed mb-4">
-                We redesigned their full pricing architecture with a four-tier structure aligned to their actual cost and value delivery. The booking flow was rebuilt to three steps. Average order value rose 92 percent, and a loyalty and communication overhaul aimed at the expat guest base lifted expat retention by 28 percent.
+                We redesigned their full spa pricing architecture with a four-tier structure aligned to their actual cost and value delivery. The booking flow was rebuilt to three steps. Through this spa AOV optimization, average order value rose 92 percent, and a loyalty and communication overhaul aimed at the expat guest base lifted expat retention by 28 percent — measurable wellness pricing strategy results within two quarters.
               </p>
               <p className="font-body text-cream/55 text-sm leading-relaxed">
                 The partnership program was the highest-impact element. Eleven corporate wellness partnerships were activated in the first year, providing a predictable B2B revenue layer that had not previously existed.

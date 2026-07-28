@@ -4,7 +4,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "The Method | Diagnostic, Architecture, Partnership — Generation Beta",
-  description: "How a Generation Beta engagement runs. A 15-day Diagnostic, a scoped System Architecture build, and an optional ongoing Partnership. Fixed scope, fixed fee, at every phase.",
+  description: "Our hospitality revenue audit and hotel growth diagnostic process, step by step. A 15-day Diagnostic, a scoped System Architecture build, and an optional ongoing Partnership. Fixed scope, fixed fee, at every phase.",
 };
 
 const serviceSchema = {

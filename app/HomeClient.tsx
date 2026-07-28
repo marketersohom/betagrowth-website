@@ -122,7 +122,7 @@ export default function HomeClient() {
               transition={{ duration: 0.6, delay: 0.65 }}
               className="font-body text-cream/60 text-lg lg:text-xl leading-relaxed max-w-2xl mb-12"
             >
-              Most businesses in hospitality, wellness, and professional services are losing 20 to 40 percent of their potential revenue to invisible gaps in pricing, positioning, and operations. As a specialized growth marketing and revenue architecture agency operating out of Bangkok, we build the systems that stop it — serving clients across Southeast Asia, including Thailand, Singapore, and Indonesia.
+              Most hospitality, luxury wellness, and professional service brands in Southeast Asia are losing 20 to 40 percent of their potential revenue to invisible gaps in pricing, positioning, and operations. As a specialized hospitality revenue management and growth marketing agency operating out of Bangkok, we build the systems that stop it — serving hotel groups, resorts, and wellness operators as dedicated revenue consultants across Thailand, Singapore, and Indonesia.
             </motion.p>
 
             <motion.div
@@ -201,7 +201,7 @@ export default function HomeClient() {
               Revenue leak is structural, not strategic.
             </h2>
             <p className="font-body text-cream/60 leading-relaxed mb-6">
-              Operating out of Bangkok, we serve hospitality, wellness, and premium professional services across Southeast Asia — including Thailand, Singapore, and Indonesia. Revenue leak is not about working harder or spending more on marketing. The leak happens at the architectural level: pricing that does not reflect actual value, operations that create booking friction, online presence that loses guests before they even call.
+              Operating out of Bangkok, we serve hospitality, wellness, and premium professional services across Southeast Asia — including Thailand, Singapore, and Indonesia. Revenue leak is not about working harder or spending more on marketing. Traditional hotel yield management consultants stop at room rates; we treat pricing, booking flow, and reputation as one connected system. The leak happens at the architectural level: room and spa pricing strategy that does not reflect actual value, operations that create direct booking conversion friction, online presence that loses guests before they even call.
             </p>
             <p className="font-body text-cream/60 leading-relaxed">
               Most consultants optimize what exists. We start from the architecture and rebuild it so revenue flows where it should.
@@ -271,11 +271,11 @@ export default function HomeClient() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-10">
             {[
               {
-                title: "Pricing Architecture",
+                title: "Pricing Architecture & Yield Optimization",
                 detail: "We compare your prices against cost of delivery, competitor positioning, and willingness-to-pay signals to surface where you are undercharging.",
               },
               {
-                title: "Booking & Checkout Flow",
+                title: "Direct Booking & Conversion Architecture",
                 detail: "Every step between intent and confirmation is mapped to find the friction that silently kills conversion.",
               },
               {
@@ -283,7 +283,7 @@ export default function HomeClient() {
                 detail: "Reviews, response patterns, and sentiment audited to expose what your digital presence tells customers before they ever contact you.",
               },
               {
-                title: "Retention & Repeat Revenue",
+                title: "Guest Retention & Lifetime Value Systems",
                 detail: "We track what happens after the first visit, whether guests come back, how often, and why the ones who don't leave money on the table permanently.",
               },
               {

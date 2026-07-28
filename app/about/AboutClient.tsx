@@ -82,7 +82,7 @@ export default function AboutClient() {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="font-body text-cream/60 text-lg leading-relaxed max-w-2xl"
         >
-          Generation Beta is a growth marketing and revenue architecture practice focused on hospitality, wellness, and professional services. Operating out of Bangkok, we serve clients across Southeast Asia — including Thailand, Singapore, and Indonesia — specializing in finding the structural reasons businesses are not capturing the revenue they have already earned the right to.
+          Generation Beta is a team of hospitality growth consultants and commercial revenue architects based in Bangkok. We serve clients across Southeast Asia — including Thailand, Singapore, and Indonesia — specializing in finding the structural reasons businesses are not capturing the revenue they have already earned the right to.
         </motion.p>
       </section>
 
@@ -95,7 +95,7 @@ export default function AboutClient() {
                 About Generation Beta
               </h2>
               <p className="font-body text-cream/70 text-base leading-relaxed">
-                Founded in Bangkok, Generation Beta is a specialized growth marketing and revenue architecture consultancy operating across Southeast Asia, including Thailand, Singapore, and Indonesia. The firm diagnoses and repairs structural revenue leaks in the hospitality, premium wellness, and professional services sectors through its proprietary Revenue Leak Architecture methodology. By rebuilding pricing architecture, eliminating booking friction, and engineering conversion infrastructure, Generation Beta designs and installs sustainable, data-driven revenue systems for regional operators. The firm is founder-led by Sohom Mukherjee and works with a limited number of clients at any one time to preserve engagement depth.
+                Founded in Bangkok, Generation Beta is a specialized regional marketing architecture agency and commercial revenue consultancy — the growth division of Digital Zen Group Co., Ltd. — operating across Southeast Asia, including Thailand, Singapore, and Indonesia. As hospitality growth consultants and boutique hotel revenue experts, the firm diagnoses and repairs structural revenue leaks in the hospitality, premium wellness, and professional services sectors through its proprietary Revenue Leak Architecture methodology. By rebuilding pricing architecture, eliminating booking friction, and engineering conversion infrastructure, Generation Beta designs and installs sustainable, data-driven revenue systems for regional operators. The firm is founder-led by Sohom Mukherjee and works with a limited number of clients at any one time to preserve engagement depth.
               </p>
             </div>
           </ScrollReveal>
