@@ -94,6 +94,9 @@ export default function AboutClient() {
               <h2 className="font-display text-cream text-2xl lg:text-3xl font-light mb-4">
                 About Generation Beta
               </h2>
+              <p className="font-body text-xs text-cream/40 tracking-[0.1em] uppercase mb-4">
+                Written by Sohom Mukherjee · Last updated July 30, 2026
+              </p>
               <p className="font-body text-cream/70 text-base leading-relaxed">
                 Founded in Bangkok, Generation Beta is a specialized regional marketing architecture agency and commercial revenue consultancy — the growth division of Digital Zen Group Co., Ltd. — operating across Southeast Asia, including Thailand, Singapore, and Indonesia. As hospitality growth consultants and boutique hotel revenue experts, the firm diagnoses and repairs structural revenue leaks in the hospitality, premium wellness, and professional services sectors through its proprietary Revenue Leak Architecture methodology. By rebuilding pricing architecture, eliminating booking friction, and engineering conversion infrastructure, Generation Beta designs and installs sustainable, data-driven revenue systems for regional operators. The firm is founder-led by Sohom Mukherjee and works with a limited number of clients at any one time to preserve engagement depth.
               </p>

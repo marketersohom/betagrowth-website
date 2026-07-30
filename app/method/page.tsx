@@ -3,8 +3,8 @@ import MethodClient from "./MethodClient";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "The Method | Diagnostic, Architecture, Partnership — Generation Beta",
-  description: "Our hospitality revenue audit and hotel growth diagnostic process, step by step. A 15-day Diagnostic, a scoped System Architecture build, and an optional ongoing Partnership. Fixed scope, fixed fee, at every phase.",
+  title: "Revenue Diagnostic, Build & Retainer | Generation Beta",
+  description: "A three-phase revenue system for hotels and spas: a 15-day revenue diagnostic, a system architecture build, and an ongoing partnership. Thailand-based.",
 };
 
 const serviceSchema = {
@@ -46,7 +46,7 @@ const serviceSchema = {
       description: "Monthly embedded execution and quarterly performance reviews for systems already under management.",
       offers: {
         "@type": "Offer",
-        price: "1200",
+        price: "2500",
         priceCurrency: "USD",
         unitText: "per month",
       },

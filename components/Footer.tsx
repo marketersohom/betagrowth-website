@@ -11,6 +11,7 @@ const footerLinks = {
     { href: "/method", label: "The Method" },
     { href: "/about", label: "About" },
     { href: "/insights", label: "Insights" },
+    { href: "/faq", label: "FAQ" },
   ],
   Connect: [
     { href: "/contact", label: "Contact" },

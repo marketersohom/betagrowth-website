@@ -12,6 +12,7 @@ type Phase = {
   tagline: string;
   description: string;
   fee: string;
+  guarantee?: string;
   selectivity?: string;
   deliverables: string[];
   expanded: { area: string; detail: string }[];
@@ -23,9 +24,10 @@ const phases: Phase[] = [
     number: "01",
     title: "Revenue Diagnostic",
     duration: "15 days",
-    tagline: "A 15-day hospitality revenue audit and hotel growth diagnostic of your full revenue system. We find where money is being lost before recommending anything.",
-    description: "The Diagnostic is the foundation of everything. We do not guess at problems or rely on your instincts about where revenue is lost. We audit 14 fields across six categories systematically, interview stakeholders, and examine your data. The output is a specific, ranked list of revenue gaps.",
-    fee: "$2,500, fixed. Credited in full against Phase 2 if you proceed within 60 days of delivery. We only move to System Architecture when the Diagnostic identifies at least 3x the proposed Architecture fee in addressable leak value — if it doesn't, we say so, and the engagement stops there.",
+    tagline: "In 15 days you will know exactly where your revenue is leaking, what each leak is costing you, and which fixes pay back first.",
+    description: "The Diagnostic is the foundation of everything, and it removes the guessing. We examine fourteen fields across six categories, interview your team, and read your actual data. You walk away with a ranked list of every place money is leaving your business and the recoverable value attached to each one. From that point on, every decision you make about what to fix comes with a number next to it. We recommend nothing until we have found where the money goes.",
+    fee: "$2,500, fixed. Credited in full against System Architecture if you proceed within 60 days.",
+    guarantee: "If the Diagnostic does not surface at least three times its own fee in recoverable revenue, you do not move to the next phase and you do not pay for it. You keep the Priority Matrix regardless. We only build when the numbers justify building.",
     deliverables: [
       "Revenue Leak Report",
       "Priority Matrix — ranked by impact and effort",
@@ -35,19 +37,19 @@ const phases: Phase[] = [
     expanded: [
       {
         area: "Pricing Architecture",
-        detail: "We examine how your prices are set against your actual cost of delivery, competitor positioning, and customer perception. Most businesses in hospitality undercharge their top offerings by 15 to 30 percent.",
+        detail: "We show you where your prices sit against your real cost of delivery, your competitors, and what guests already believe you are worth. Most hospitality businesses undercharge their best offerings by 15 to 30 percent and never know it.",
       },
       {
         area: "Booking Flow Analysis",
-        detail: "Every friction point between a potential customer and a completed booking is identified. We track where people drop off and what small changes produce the largest gains in conversion.",
+        detail: "We trace every friction point between an interested guest and a completed booking, and show you exactly where people drop off and which small changes recover the most bookings.",
       },
       {
         area: "Online Reputation Signals",
-        detail: "Google reviews, response patterns, sentiment analysis. We identify what your online presence communicates to potential customers before they ever contact you.",
+        detail: "Reviews, response patterns, and sentiment. We show you what your online presence is telling potential guests about you before they ever make contact.",
       },
       {
         area: "Channel Mix & Distribution",
-        detail: "Where is your business discoverable? What percentage of bookings come from referrals versus walk-in versus online? We map the full channel architecture and identify where you are over-dependent.",
+        detail: "We map where your bookings actually come from, referral versus walk-in versus online, and show you where you are dangerously over-dependent on a single source.",
       },
     ],
   },
@@ -55,8 +57,8 @@ const phases: Phase[] = [
     number: "02",
     title: "System Architecture",
     duration: "6 to 10 weeks",
-    tagline: "We design the revenue systems your business should be running, then build and install them alongside your team until they are live.",
-    description: "System Architecture takes the Priority Matrix from your Diagnostic and builds the highest-ROI fixes first as a full revenue management implementation, built around a pricing architecture framework rather than a generic rebuild. Engagements are scoped to 3 to 5 modules by default, priced per module, sequenced by dependency and impact, not sold as an open-ended rebuild. Modules from $800, most engagements $6,000 to $14,000. Typical timeline 6 to 10 weeks depending on modules selected.",
+    tagline: "We build the systems your Diagnostic identified and install them inside your operation, so the revenue you have been missing actually starts showing up.",
+    description: "Knowing where revenue leaks is worth nothing if the fixes never get built. This is where they get built. We take the highest-return gaps from your Priority Matrix and turn them into live systems: pricing rebuilt and in production, booking friction removed, channels and partnerships activated. Then we install each system inside your operation and train your team to run it, so the change holds after we step back. The two reasons revenue fixes usually die, nobody executes them and the staff resists them, are the two things this phase exists to solve. Engagements are scoped to three to five modules, sequenced by dependency and impact, priced per module. This is not an open-ended rebuild.",
     fee: "Modules from $800, most engagements $6,000 to $14,000. Scoped per module from Diagnostic findings.",
     deliverables: [
       "Revenue System Blueprint",
@@ -67,19 +69,19 @@ const phases: Phase[] = [
     expanded: [
       {
         area: "Pricing Model Redesign",
-        detail: "We build pricing architectures that capture value accurately: tiered offerings, package structures, seasonal logic, and upsell sequences, then put them into production.",
+        detail: "We build pricing architectures that capture value accurately, tiered offerings, package structures, seasonal logic, and upsell sequences, then put them into production.",
       },
       {
         area: "Conversion Infrastructure",
-        detail: "We build and install the systems that move guests from discovery to booking to repeat. Every touchpoint is mapped, rebuilt, and switched on.",
+        detail: "We build and install the systems that move guests from discovery to booking to repeat. Every touchpoint mapped, rebuilt, and switched on.",
       },
       {
         area: "Partnership & Channel Activation",
-        detail: "We identify the highest-value B2B relationships and distribution channels, then structure and activate them so the revenue actually starts flowing.",
+        detail: "We identify your highest-value B2B relationships and distribution channels, then structure and activate them so the revenue actually starts flowing.",
       },
       {
         area: "Installation & Team Training",
-        detail: "We work inside your operations to install each system and train your team to run it, so the architecture holds after we step back. Accountable for the systems going live, not just the plan.",
+        detail: "We work inside your operation to install each system and train your team to run it, so the architecture holds after we step back. Accountable for the systems going live, not just the plan.",
       },
     ],
   },
@@ -87,9 +89,9 @@ const phases: Phase[] = [
     number: "03",
     title: "Ongoing Partnership",
     duration: "Monthly",
-    tagline: "We run the revenue system with you, tracking the numbers and compounding the gains month over month.",
-    description: "Ongoing Partnership keeps built systems from decaying and gives you continued access to whatever was in your Priority Matrix but not built in Phase 2. Monthly, scoped to systems under management, from $1,200/month. Quarterly performance reviews. 3-month minimum.",
-    fee: "From $1,200/month, scoped to systems under management. 3-month minimum.",
+    tagline: "We stay in and run the systems with you, so the gains compound instead of decaying the moment we would otherwise walk out the door.",
+    description: "Built systems decay without an owner. Prices drift back, staff slip to old habits, the partnerships you activated go quiet. Ongoing Partnership keeps that from happening. We stay embedded and accountable for the numbers, reviewing conversion, average spend, repeat rate, and review velocity every week, and running a full performance deep-dive every quarter. You also keep access to everything in your Priority Matrix that was not built in Phase 2, so the next tier of gains keeps arriving. This is priced against the revenue your systems protect and compound, not against hours on a clock.",
+    fee: "From $2,500/month, scoped to systems under management. Minimum 3-month term.",
     deliverables: [
       "Weekly metric tracking and iteration",
       "Hands-on ownership of the live systems",
@@ -99,7 +101,7 @@ const phases: Phase[] = [
     expanded: [
       {
         area: "Embedded Execution",
-        detail: "We stay inside your operations running the systems we built, present and accountable for the outcomes rather than handing you a dashboard and leaving.",
+        detail: "We stay inside your operation running the systems we built, present and accountable for the outcomes, not handing you a dashboard and leaving.",
       },
       {
         area: "Metric Tracking",
@@ -157,11 +159,11 @@ export default function MethodClient() {
           className="font-display text-cream leading-[0.95] tracking-tight mb-8 max-w-4xl"
           style={{ fontSize: "clamp(2.8rem, 6vw, 5.5rem)" }}
         >
-          Structured.
+          Know exactly where your revenue is leaking.
           <br />
-          <em className="text-gold not-italic">Sequenced.</em>
+          <em className="text-gold not-italic">Close the leaks.</em>
           <br />
-          Built to last.
+          Keep them closed.
         </motion.h1>
 
         <motion.div
@@ -171,13 +173,10 @@ export default function MethodClient() {
           className="font-body text-cream/60 text-lg leading-relaxed max-w-2xl space-y-5"
         >
           <p>
-            Revenue Leak Architecture is our hospitality revenue audit and pricing architecture framework for finding structural revenue gaps and rebuilding the systems that close them.
+            Most hospitality and wellness businesses are quietly losing revenue in places the owner never sees. Underpriced rooms and treatments. Bookings lost to friction nobody tracks. Channels they lean on too hard. We find every leak, put a number on each one, build the systems that close them, and stay in to keep them closed.
           </p>
           <p>
-            Three phases that follow a deliberate sequence. You cannot effectively redesign a revenue system without first running the hotel growth diagnostic to understand where it is broken. The Diagnostic is not optional.
-          </p>
-          <p>
-            Engagements are scoped, fixed-fee, and sequenced — the same wellness business consulting process we run for Southeast Asia hotel consultants and resort operators. A small number of clients continue past Phase 3 into ongoing partnership.
+            Three phases, one direction. You start by seeing exactly where the money goes. You move to building the systems that recover it. You end with those systems run and compounding month over month. You can walk the phases one decision at a time, or commit to the whole arc from day one.
           </p>
         </motion.div>
       </section>
@@ -345,6 +344,16 @@ export default function MethodClient() {
                                 {phase.fee}
                               </p>
                             </div>
+                            {phase.guarantee && (
+                              <div className="mt-6 pt-5 border-t border-gold/15">
+                                <p className="font-body text-xs text-gold tracking-[0.15em] uppercase mb-2">
+                                  Guarantee
+                                </p>
+                                <p className="font-body text-sm text-cream/70 leading-relaxed">
+                                  {phase.guarantee}
+                                </p>
+                              </div>
+                            )}
                           </div>
                         </div>
                       </div>
@@ -354,6 +363,55 @@ export default function MethodClient() {
               </div>
             </ScrollReveal>
           ))}
+        </div>
+      </section>
+
+      {/* Two ways to engage */}
+      <section className="border-t border-gold/10 bg-plum-mid/10">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-24 lg:py-28">
+          <ScrollReveal className="mb-14 max-w-3xl">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="h-px w-8 bg-gold" />
+              <span className="font-body text-gold text-xs tracking-[0.2em] uppercase">
+                Two Ways To Engage
+              </span>
+            </div>
+            <h2
+              className="font-display text-cream leading-[1.05]"
+              style={{ fontSize: "clamp(2rem, 4vw, 3.2rem)" }}
+            >
+              Two ways to work with us.
+            </h2>
+          </ScrollReveal>
+
+          <div className="grid sm:grid-cols-2 gap-8 lg:gap-12">
+            <ScrollReveal delay={0}>
+              <div className="border border-gold/20 bg-plum-mid/10 p-8 h-full">
+                <p className="font-body text-xs text-gold tracking-[0.2em] uppercase mb-4">
+                  Track One
+                </p>
+                <h3 className="font-display text-cream text-2xl font-light mb-4">
+                  The Path
+                </h3>
+                <p className="font-body text-cream/60 text-sm leading-relaxed">
+                  Diagnostic, then Architecture, then Partnership. Three stages, three decisions. You commit one step at a time and only continue when the numbers justify it. Your Diagnostic fee is credited in full against Architecture when you proceed. This is the careful route, and it works.
+                </p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={0.1}>
+              <div className="border border-gold/40 bg-plum-mid/20 p-8 h-full">
+                <p className="font-body text-xs text-gold tracking-[0.2em] uppercase mb-4">
+                  Track Two
+                </p>
+                <h3 className="font-display text-cream text-2xl font-light mb-4">
+                  The Partnership
+                </h3>
+                <p className="font-body text-cream/60 text-sm leading-relaxed">
+                  One agreement across all three phases, for operators ready to move now. Your Diagnostic is credited in full, your build moves to the front of the queue, and we run the system with you from day one under a nine-month partnership term. This is the path built for the businesses we most want to work with, and it is the one that compounds fastest, because there is no pause between finding the leaks, closing them, and keeping them closed.
+                </p>
+              </div>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 
