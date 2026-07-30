@@ -91,7 +91,7 @@ const phases: Phase[] = [
     duration: "Monthly",
     tagline: "We stay in and run the systems with you, so the gains compound instead of decaying the moment we would otherwise walk out the door.",
     description: "Built systems decay without an owner. Prices drift back, staff slip to old habits, the partnerships you activated go quiet. Ongoing Partnership keeps that from happening. We stay embedded and accountable for the numbers, reviewing conversion, average spend, repeat rate, and review velocity every week, and running a full performance deep-dive every quarter. You also keep access to everything in your Priority Matrix that was not built in Phase 2, so the next tier of gains keeps arriving. This is priced against the revenue your systems protect and compound, not against hours on a clock.",
-    fee: "From $2,500/month, scoped to systems under management. Minimum 3-month term.",
+    fee: "From $2,500/month, scoped to systems under management. Minimum term: 3 months on the sequential path, 9 months on the committed partnership.",
     deliverables: [
       "Weekly metric tracking and iteration",
       "Hands-on ownership of the live systems",
@@ -396,6 +396,14 @@ export default function MethodClient() {
                 <p className="font-body text-cream/60 text-sm leading-relaxed">
                   Diagnostic, then Architecture, then Partnership. Three stages, three decisions. You commit one step at a time and only continue when the numbers justify it. Your Diagnostic fee is credited in full against Architecture when you proceed. This is the careful route, and it works.
                 </p>
+                <div className="mt-6 pt-5 border-t border-gold/15">
+                  <p className="font-body text-xs text-gold tracking-[0.15em] uppercase mb-2">
+                    Term
+                  </p>
+                  <p className="font-body text-sm text-cream/70 leading-relaxed">
+                    Retainer minimum, 3 months.
+                  </p>
+                </div>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
@@ -407,8 +415,16 @@ export default function MethodClient() {
                   The Partnership
                 </h3>
                 <p className="font-body text-cream/60 text-sm leading-relaxed">
-                  One agreement across all three phases, for operators ready to move now. Your Diagnostic is credited in full, your build moves to the front of the queue, and we run the system with you from day one under a nine-month partnership term. This is the path built for the businesses we most want to work with, and it is the one that compounds fastest, because there is no pause between finding the leaks, closing them, and keeping them closed.
+                  One agreement across all three phases, for operators ready to move now. Your Diagnostic is credited in full, your build moves to the front of the queue, and we run the system with you from day one. This is the path built for the businesses we most want to work with, and it is the one that compounds fastest, because there is no pause between finding the leaks, closing them, and keeping them closed.
                 </p>
+                <div className="mt-6 pt-5 border-t border-gold/15">
+                  <p className="font-body text-xs text-gold tracking-[0.15em] uppercase mb-2">
+                    Term
+                  </p>
+                  <p className="font-body text-sm text-cream/70 leading-relaxed">
+                    Partnership term, 9 months.
+                  </p>
+                </div>
               </div>
             </ScrollReveal>
           </div>
