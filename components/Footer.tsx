@@ -5,6 +5,7 @@ const footerLinks = {
     { href: "/work", label: "Case Studies" },
     { href: "/work#spa-group", label: "Phuket Spa & Hydrotherapy Group" },
     { href: "/work#executive-coaching", label: "Executive Coaching" },
+    { href: "/work#wellness-retreat", label: "Wellness Retreat, India" },
   ],
   Services: [
     { href: "/diagnostic", label: "The Diagnostic" },

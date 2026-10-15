@@ -20,6 +20,11 @@ const coachStats = [
   { value: 3, suffix: "", label: "Investor conversations", period: "Initiated" },
 ];
 
+const retreatStats = [
+  { value: 18, suffix: "%", label: "Booking conversion", period: "No discounts" },
+  { value: 4, suffix: " of 6", label: "Recommendations live", period: "Within 90 days" },
+];
+
 export default function WorkClient() {
   return (
     <main className="pt-20">
@@ -55,7 +60,7 @@ export default function WorkClient() {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="font-body text-cream/60 text-lg leading-relaxed max-w-2xl"
         >
-          Hospitality growth case studies with real numbers. A luxury spa revenue case study, a resort AOV optimization story, and hotel marketing results across Southeast Asia, all from live revenue architecture engagements.
+          Hospitality growth case studies with real numbers. A luxury spa revenue case study from Phuket, an executive coaching positioning engagement, and a wellness retreat diagnostic in India, all from live revenue architecture engagements.
         </motion.p>
       </section>
 
@@ -282,6 +287,127 @@ export default function WorkClient() {
               </p>
             </ScrollReveal>
           </div>
+        </div>
+      </section>
+
+      {/* Wellness retreat */}
+      <section id="wellness-retreat" className="border-t border-gold/10">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-24 lg:py-28">
+          <div className="grid lg:grid-cols-12 gap-12 mb-16">
+            <ScrollReveal className="lg:col-span-7">
+              <div className="flex items-center gap-3 mb-5">
+                <span className="font-body text-xs text-cream/40 tracking-[0.15em] uppercase">Case Study 03</span>
+                <div className="h-px flex-1 max-w-[3rem] bg-gold/20" />
+              </div>
+              <h2
+                className="font-display text-cream leading-tight mb-4"
+                style={{ fontSize: "clamp(2rem, 4vw, 3.5rem)" }}
+              >
+                Boutique Health &amp; Wellness Retreat Group
+              </h2>
+              <div className="flex flex-wrap gap-2 mb-6">
+                {["Hospitality & Wellness", "North & South India", "Revenue Diagnostic", "Guest Persona"].map((tag) => (
+                  <span key={tag} className="font-body text-xs text-cream/40 border border-cream/10 px-3 py-1">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              <p className="font-body text-cream/60 text-sm leading-relaxed">
+                A wellness retreat company running several lifestyle and luxury brands across multiple locations in North and South India, with a product and on-site experience stronger than many competitors. The problem was invisible: the company had never defined its core ideal guest, so the website, pricing, and pre-booking calls were each built around a different idea of who they were selling to. Revenue was unpredictable and often stalled for months.
+              </p>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.15} className="lg:col-span-5">
+              <div className="border border-gold/20 p-6 bg-plum-mid/20">
+                <p className="font-body text-xs text-gold tracking-[0.15em] uppercase mb-6">Engagement scope</p>
+                <ul className="space-y-3">
+                  {[
+                    "15-Day Diagnostic",
+                    "Revenue Leak Report",
+                    "Priority Matrix, ranked by impact and effort",
+                    "90-Day Action Plan",
+                    "Delivery call with full walkthrough",
+                  ].map((item) => (
+                    <li key={item} className="flex items-center gap-3">
+                      <div className="w-1 h-1 rounded-full bg-gold flex-shrink-0" />
+                      <span className="font-body text-sm text-cream/65">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </ScrollReveal>
+          </div>
+
+          {/* Stats */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6 max-w-2xl">
+            {retreatStats.map((stat, i) => (
+              <ScrollReveal key={`${stat.label}-${stat.period}`} delay={i * 0.08}>
+                <div className="border-t border-gold/20 pt-4">
+                  <div className="font-display text-gold leading-none mb-2" style={{ fontSize: "clamp(2rem, 3.5vw, 3rem)" }}>
+                    {stat.suffix === "%" && <span className="text-2xl align-top mt-1 inline-block">+</span>}
+                    <CountUp
+                      end={stat.value}
+                      suffix={stat.suffix !== "%" ? stat.suffix : ""}
+                      decimals={0}
+                    />
+                    {stat.suffix === "%" && "%"}
+                  </div>
+                  <p className="font-body text-cream text-sm">{stat.label}</p>
+                  <p className="font-body text-cream/40 text-xs">{stat.period}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+          <ScrollReveal className="mb-4">
+            <p className="font-body text-cream/70 text-base leading-relaxed max-w-3xl">
+              Through our 15-Day Diagnostic with a multi-brand wellness retreat company, we identified the missing ideal guest persona behind their revenue leaks and built six recommendations around it. Their in-house team implemented four, driving an 18% increase in booking conversion among target guests within 90 days, with no discounting.
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal>
+            <p className="font-body text-cream/45 text-xs italic max-w-2xl mb-16 leading-relaxed">
+              Diagnostic-only engagement. Recommendations were implemented by the client&apos;s in-house team.
+            </p>
+          </ScrollReveal>
+
+          {/* Story */}
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-24">
+            <ScrollReveal>
+              <h3 className="font-display text-cream text-2xl font-light mb-4">The persona problem</h3>
+              <p className="font-body text-cream/55 text-sm leading-relaxed mb-4">
+                The company had never defined its core ideal guest. This is the most common gap we find, and it made everything downstream haphazard. The website read like a travel portal rather than a premium destination, so heavy discounting was doing the work positioning should have done. Pre-booking calls were handled by temps reading a script so generic it could have sold soap.
+              </p>
+              <p className="font-body text-cream/55 text-sm leading-relaxed">
+                The in-house team was capable, but most of its work improved on what predecessors had built. No one had looked at the full picture, so the website, pricing, guest calls, retention, and partnerships each ran in its own silo, with no system for lifetime value and no outbound partnership channel.
+              </p>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.12}>
+              <h3 className="font-display text-cream text-2xl font-light mb-4">The recommendations</h3>
+              <p className="font-body text-cream/55 text-sm leading-relaxed mb-4">
+                We started by defining the ideal guest persona, then built every recommendation around the behavioral and cognitive biases that shape how that guest decides to book. The findings were delivered as a Revenue Leak Report, a priority matrix ranked by impact and effort, and a 90-day action plan, walked through in full on a delivery call.
+              </p>
+              <p className="font-body text-cream/55 text-sm leading-relaxed">
+                The in-house team implemented four of the six recommendations. Within the first 90 days, booking conversion among their target guests rose 18% without a single discount, in line with what the diagnostic had projected.
+              </p>
+            </ScrollReveal>
+          </div>
+
+          {/* Testimonial */}
+          <ScrollReveal className="mt-16 border-t border-gold/10 pt-12">
+            <div className="max-w-2xl">
+              <blockquote className="font-display text-cream italic text-xl lg:text-2xl font-light leading-relaxed mb-6">
+                &ldquo;I wish we had met Generation Beta a couple of years ago. None of the consultants we had worked with ever pointed out so much truth, let alone in 15 days. Most agencies were more focused on stretching the retainer than finding what was actually causing the problem. Once we had the leak report, the whole journey became simple and logical. Ninety days later, we are getting pretty much the results they predicted.&rdquo;
+              </blockquote>
+              <div className="flex items-center gap-4">
+                <div className="w-8 h-px bg-gold" />
+                <div>
+                  <p className="font-body text-cream text-sm font-medium">Managing Director</p>
+                  <p className="font-body text-cream/40 text-xs">Boutique health &amp; wellness retreat group, India</p>
+                </div>
+              </div>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
