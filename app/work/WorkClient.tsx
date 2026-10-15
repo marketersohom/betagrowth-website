@@ -115,7 +115,7 @@ export default function WorkClient() {
           {/* Stats */}
           <div className="grid grid-cols-2 lg:grid-cols-6 gap-6 mb-16">
             {spaStats.map((stat, i) => (
-              <ScrollReveal key={stat.label} delay={i * 0.08}>
+              <ScrollReveal key={`${stat.label}-${stat.period}`} delay={i * 0.08}>
                 <div className="border-t border-gold/20 pt-4">
                   <div className="font-display text-gold leading-none mb-2" style={{ fontSize: "clamp(2rem, 3.5vw, 3rem)" }}>
                     {stat.suffix === "%" && <span className="text-2xl align-top mt-1 inline-block">+</span>}
@@ -231,7 +231,7 @@ export default function WorkClient() {
           {/* Stats */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6 max-w-2xl">
             {coachStats.map((stat, i) => (
-              <ScrollReveal key={stat.label} delay={i * 0.08}>
+              <ScrollReveal key={`${stat.label}-${stat.period}`} delay={i * 0.08}>
                 <div className="border-t border-gold/20 pt-4">
                   <div className="font-display text-gold leading-none mb-2" style={{ fontSize: "clamp(2rem, 3.5vw, 3rem)" }}>
                     {stat.suffix === "%" && <span className="text-2xl align-top mt-1 inline-block">+</span>}

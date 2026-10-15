@@ -19,7 +19,7 @@ export default function CountUp({
   decimals = 0,
 }: CountUpProps) {
   const ref = useRef<HTMLSpanElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true, margin: "-100px 0px" });
   const count = useMotionValue(0);
   const rounded = useTransform(count, (latest) =>
     decimals > 0 ? latest.toFixed(decimals) : Math.round(latest).toString()
