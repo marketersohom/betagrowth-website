@@ -424,6 +424,12 @@ export default function MethodClient() {
                   <p className="font-body text-sm text-cream/70 leading-relaxed">
                     Partnership term, 9 months.
                   </p>
+                  <p className="font-body text-xs text-gold tracking-[0.15em] uppercase mt-4 mb-2">
+                    Fee
+                  </p>
+                  <p className="font-body text-sm text-cream/70 leading-relaxed">
+                    $4,999 USD per month.
+                  </p>
                 </div>
               </div>
             </ScrollReveal>
