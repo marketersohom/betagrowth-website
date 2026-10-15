@@ -3,8 +3,8 @@ import Link from "next/link";
 const footerLinks = {
   Work: [
     { href: "/work", label: "Case Studies" },
-    { href: "/work#amla", label: "Amla Spa Group" },
-    { href: "/work#tony", label: "Tony Meechai" },
+    { href: "/work#spa-group", label: "Phuket Spa & Hydrotherapy Group" },
+    { href: "/work#executive-coaching", label: "Executive Coaching" },
   ],
   Services: [
     { href: "/diagnostic", label: "The Diagnostic" },

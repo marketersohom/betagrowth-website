@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import ScrollReveal from "@/components/ScrollReveal";
 import CountUp from "@/components/CountUp";
 
-const amlaStats = [
+const spaStats = [
   { value: 46, suffix: "%", label: "Revenue growth", period: "Year 1" },
   { value: 84, suffix: "%", label: "Revenue growth", period: "Year 2" },
   { value: 11, suffix: "", label: "New partnerships", period: "Secured" },
@@ -14,7 +14,7 @@ const amlaStats = [
   { value: 28, suffix: "%", label: "Expat retention rate", period: "Increase" },
 ];
 
-const tonyStats = [
+const coachStats = [
   { value: 36, suffix: "%", label: "Coaching enquiries", period: "Increase" },
   { value: 270, suffix: "+", label: "Book waitlist", period: "Pre-launch" },
   { value: 3, suffix: "", label: "Investor conversations", period: "Initiated" },
@@ -59,8 +59,8 @@ export default function WorkClient() {
         </motion.p>
       </section>
 
-      {/* Amla Spa Group */}
-      <section id="amla" className="border-t border-gold/10">
+      {/* Premium spa & hydrotherapy group */}
+      <section id="spa-group" className="border-t border-gold/10">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-24 lg:py-28">
           {/* Header */}
           <div className="grid lg:grid-cols-12 gap-12 mb-16">
@@ -73,20 +73,20 @@ export default function WorkClient() {
                 className="font-display text-cream leading-tight mb-4"
                 style={{ fontSize: "clamp(2rem, 4vw, 3.5rem)" }}
               >
-                Amla Spa Group
+                Premium Spa &amp; Hydrotherapy Group
               </h2>
               <p className="font-body text-gold/80 text-sm tracking-wide mb-5">
                 Luxury spa revenue case study: +84% revenue growth through spa pricing architecture &amp; booking optimization
               </p>
               <div className="flex flex-wrap gap-2 mb-6">
-                {["Wellness & Spa", "Thailand", "Revenue Architecture", "Operations"].map((tag) => (
+                {["Wellness & Spa", "Phuket, Thailand", "Revenue Architecture", "Operations"].map((tag) => (
                   <span key={tag} className="font-body text-xs text-cream/40 border border-cream/10 px-3 py-1">
                     {tag}
                   </span>
                 ))}
               </div>
               <p className="font-body text-cream/60 text-sm leading-relaxed">
-                Amla Spa Group came to us at a plateau. Three locations, strong reputation, high utilization, and flat revenue. The issue was not their service quality. It was that their spa pricing strategy, operations, and online presence were not structured to capture the value they were already delivering.
+                This premium spa and hydrotherapy group in Phuket came to us at a plateau. Three locations, strong reputation, high utilization, and flat revenue. The issue was not their service quality. It was that their spa pricing strategy, operations, and online presence were not structured to capture the value they were already delivering.
               </p>
             </ScrollReveal>
 
@@ -114,7 +114,7 @@ export default function WorkClient() {
 
           {/* Stats */}
           <div className="grid grid-cols-2 lg:grid-cols-6 gap-6 mb-16">
-            {amlaStats.map((stat, i) => (
+            {spaStats.map((stat, i) => (
               <ScrollReveal key={stat.label} delay={i * 0.08}>
                 <div className="border-t border-gold/20 pt-4">
                   <div className="font-display text-gold leading-none mb-2" style={{ fontSize: "clamp(2rem, 3.5vw, 3rem)" }}>
@@ -135,7 +135,7 @@ export default function WorkClient() {
 
           <ScrollReveal className="mb-16">
             <p className="font-body text-cream/70 text-base leading-relaxed max-w-3xl">
-              Through our engagement with the Amla Spa Group, we rebuilt pricing architecture and eliminated booking friction to drive a 46% increase in year-over-year revenue in Year 1, compounding to an 84% increase in Year 2. Average order value increased 92%, expat guest retention rose 28%, and eleven new corporate wellness partnerships were secured.
+              Through our engagement with this Phuket spa and hydrotherapy group, we rebuilt pricing architecture and eliminated booking friction to drive a 46% increase in year-over-year revenue in Year 1, compounding to an 84% increase in Year 2. Average order value increased 92%, expat guest retention rose 28%, and eleven new corporate wellness partnerships were secured.
             </p>
           </ScrollReveal>
 
@@ -171,8 +171,8 @@ export default function WorkClient() {
               <div className="flex items-center gap-4">
                 <div className="w-8 h-px bg-gold" />
                 <div>
-                  <p className="font-body text-cream text-sm font-medium">Jim Sutherland</p>
-                  <p className="font-body text-cream/40 text-xs">Partner, Amla Spa Group</p>
+                  <p className="font-body text-cream text-sm font-medium">Partner</p>
+                  <p className="font-body text-cream/40 text-xs">Premium spa &amp; hydrotherapy group, Phuket</p>
                 </div>
               </div>
             </div>
@@ -180,8 +180,8 @@ export default function WorkClient() {
         </div>
       </section>
 
-      {/* Tony Meechai */}
-      <section id="tony" className="border-t border-gold/10 bg-plum-mid/10">
+      {/* Executive coaching */}
+      <section id="executive-coaching" className="border-t border-gold/10 bg-plum-mid/10">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-24 lg:py-28">
           <div className="grid lg:grid-cols-12 gap-12 mb-16">
             <ScrollReveal className="lg:col-span-7">
@@ -193,7 +193,7 @@ export default function WorkClient() {
                 className="font-display text-cream leading-tight mb-4"
                 style={{ fontSize: "clamp(2rem, 4vw, 3.5rem)" }}
               >
-                Tony Meechai
+                Executive Coaching
               </h2>
               <div className="flex flex-wrap gap-2 mb-6">
                 {["Professional Services", "Executive Coaching", "Positioning", "Brand Authority"].map((tag) => (
@@ -203,7 +203,7 @@ export default function WorkClient() {
                 ))}
               </div>
               <p className="font-body text-cream/60 text-sm leading-relaxed">
-                Tony Meechai is an executive coach with 15 years of experience and strong informal referral traffic. The problem was invisible: his positioning was too broad, his pricing was referral-calibrated rather than value-calibrated, and he had no systematic way to capture demand beyond personal relationships.
+                The client is an executive coach with 15 years of experience and strong informal referral traffic. The problem was invisible: his positioning was too broad, his pricing was referral-calibrated rather than value-calibrated, and he had no systematic way to capture demand beyond personal relationships.
               </p>
             </ScrollReveal>
 
@@ -230,7 +230,7 @@ export default function WorkClient() {
 
           {/* Stats */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6 max-w-2xl">
-            {tonyStats.map((stat, i) => (
+            {coachStats.map((stat, i) => (
               <ScrollReveal key={stat.label} delay={i * 0.08}>
                 <div className="border-t border-gold/20 pt-4">
                   <div className="font-display text-gold leading-none mb-2" style={{ fontSize: "clamp(2rem, 3.5vw, 3rem)" }}>
@@ -250,7 +250,7 @@ export default function WorkClient() {
           </div>
           <ScrollReveal className="mb-4">
             <p className="font-body text-cream/70 text-base leading-relaxed max-w-3xl">
-              Through our positioning and offer-architecture engagement with Tony Meechai, we repositioned his coaching practice around outcome-based value to drive a 36% increase in coaching enquiries, with a 270+ waitlist secured ahead of his book launch and three investor conversations initiated.
+              Through our positioning and offer-architecture engagement with an executive coaching practice, we repositioned the practice around outcome-based value to drive a 36% increase in coaching enquiries, with a 270+ waitlist secured ahead of his book launch and three investor conversations initiated.
             </p>
           </ScrollReveal>
 
@@ -265,7 +265,7 @@ export default function WorkClient() {
             <ScrollReveal>
               <h3 className="font-display text-cream text-2xl font-light mb-4">The positioning problem</h3>
               <p className="font-body text-cream/55 text-sm leading-relaxed mb-4">
-                Tony&apos;s existing positioning described what he did, executive coaching, rather than the specific outcome he reliably produced. This is extremely common in professional services. It means he competed on price with coaches who were less experienced, rather than commanding a premium for specific, documented outcomes.
+                His existing positioning described what he did, executive coaching, rather than the specific outcome he reliably produced. This is extremely common in professional services. It means he competed on price with coaches who were less experienced, rather than commanding a premium for specific, documented outcomes.
               </p>
               <p className="font-body text-cream/55 text-sm leading-relaxed">
                 The diagnostic identified three specific case studies where his coaching had directly contributed to a client&apos;s business expansion. None of these were visible in his public positioning.

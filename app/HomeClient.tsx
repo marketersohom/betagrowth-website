@@ -9,11 +9,11 @@ import MagneticButton from "@/components/MagneticButton";
 import RecentInsights from "@/components/RecentInsights";
 
 const stats = [
-  { value: 46, suffix: "%", label: "Revenue growth, Year 1", context: "Amla Spa Group" },
-  { value: 84, suffix: "%", label: "Revenue growth, Year 2", context: "Amla Spa Group" },
-  { value: 92, suffix: "%", label: "Increase in AOV", context: "Amla Spa Group" },
-  { value: 11, suffix: "", label: "New partnerships secured", context: "Amla Spa Group" },
-  { value: 28, suffix: "%", label: "Expat retention rate increase", context: "Amla Spa Group" },
+  { value: 46, suffix: "%", label: "Revenue growth, Year 1", context: "Phuket spa & hydrotherapy group" },
+  { value: 84, suffix: "%", label: "Revenue growth, Year 2", context: "Phuket spa & hydrotherapy group" },
+  { value: 92, suffix: "%", label: "Increase in AOV", context: "Phuket spa & hydrotherapy group" },
+  { value: 11, suffix: "", label: "New partnerships secured", context: "Phuket spa & hydrotherapy group" },
+  { value: 28, suffix: "%", label: "Expat retention rate increase", context: "Phuket spa & hydrotherapy group" },
 ];
 
 const phases = [
@@ -157,7 +157,7 @@ export default function HomeClient() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16">
           <ScrollReveal className="mb-6">
             <p className="font-body text-xs text-gold tracking-[0.2em] uppercase text-center">
-              From the Amla Spa Group engagement
+              From a premium spa & hydrotherapy group in Phuket, Thailand
             </p>
           </ScrollReveal>
           <div className="grid grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
@@ -178,7 +178,7 @@ export default function HomeClient() {
           </div>
           <ScrollReveal delay={0.3} className="mt-10">
             <p className="font-body text-cream/50 text-sm text-center max-w-3xl mx-auto leading-relaxed">
-              Through our engagement with the Amla Spa Group, we rebuilt pricing architecture and eliminated booking friction to drive a 46% increase in year-over-year revenue in Year 1, compounding to an 84% increase in Year 2.
+              Through our engagement with a premium spa and hydrotherapy group in Phuket, Thailand, we rebuilt pricing architecture and eliminated booking friction to drive a 46% increase in year-over-year revenue in Year 1, compounding to an 84% increase in Year 2.
             </p>
           </ScrollReveal>
         </div>

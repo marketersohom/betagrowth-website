@@ -245,7 +245,7 @@ export default function FrameworkClient() {
               <CountUp end={84} prefix="+" suffix="%" />
             </p>
             <p className="font-body text-cream/70 text-sm leading-relaxed">
-              Revenue growth, Year 2 — Amla Spa Group
+              Revenue growth, Year 2 — premium spa & hydrotherapy group, Phuket
             </p>
             <div className="h-px bg-cream/10 my-5" />
             <p className="font-body text-cream/40 text-xs leading-relaxed">
@@ -563,7 +563,7 @@ export default function FrameworkClient() {
               The framework comes out of direct operator work and structured
               ghost-shopping across hospitality, wellness, and professional
               services in Southeast Asia, including Thailand, Singapore, and
-              Indonesia. In the Amla Spa Group engagement, closing these
+              Indonesia. In one engagement with a premium spa and hydrotherapy group in Phuket, closing these
               leaks drove a 46% increase in year-over-year revenue in Year 1,
               compounding to 84% in Year 2.
             </p>
@@ -621,8 +621,8 @@ export default function FrameworkClient() {
 
         <div className="grid sm:grid-cols-2 gap-5 max-w-3xl">
           {[
-            { value: 46, label: "Revenue growth, Year 1", context: "Amla Spa Group" },
-            { value: 84, label: "Revenue growth, Year 2", context: "Amla Spa Group" },
+            { value: 46, label: "Revenue growth, Year 1", context: "Phuket spa & hydrotherapy group" },
+            { value: 84, label: "Revenue growth, Year 2", context: "Phuket spa & hydrotherapy group" },
           ].map((m, i) => (
             <ScrollReveal key={m.label} delay={i * 0.1}>
               <div className="border border-gold/20 bg-plum-mid/20 p-7 transition-all duration-300 hover:border-gold/45 hover:-translate-y-1">
@@ -638,7 +638,7 @@ export default function FrameworkClient() {
 
         <ScrollReveal delay={0.2}>
           <Link
-            href="/work#amla"
+            href="/work#spa-group"
             className="inline-block mt-10 font-body text-cream/80 text-sm tracking-wide border-b border-gold pb-1 hover:text-cream transition-colors duration-300"
           >
             See the case study →
