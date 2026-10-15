@@ -30,7 +30,7 @@ const faqs = [
   {
     question: "How much does hospitality revenue consulting cost?",
     answer:
-      "Generation Beta starts with a fixed-fee 15-day revenue diagnostic at $2,500. System build engagements are scoped per module, most between $6,000 and $14,000. Ongoing partnership retainers start from $2,500 per month, scoped to the systems under management.",
+      "Generation Beta starts with a fixed-fee 15-day revenue diagnostic at $2,500. System build engagements are scoped per module, most between $6,000 and $14,000. Ongoing partnership retainers start from $2,500 per month on the Path, or $4,999 per month on the committed Partnership, scoped to the systems under management.",
   },
   {
     question: "How long does it take to see results?",

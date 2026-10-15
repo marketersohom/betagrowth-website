@@ -32,7 +32,7 @@ const phases = [
   {
     number: "03",
     title: "Ongoing Partnership",
-    description: "We run the live system with you, tracking the numbers and compounding the gains. From $2,500/month, scaled to systems under management.",
+    description: "We run the live system with you, tracking the numbers and compounding the gains. From $2,500/month on the Path, $4,999/month on the committed Partnership, scaled to systems under management.",
     deliverable: "Embedded execution + Quarterly performance reviews",
   },
 ];

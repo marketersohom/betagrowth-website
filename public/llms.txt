@@ -9,7 +9,7 @@ The firm's core methodology is Revenue Leak Architecture: a systematic audit acr
 Engagements run in three phases:
 - Revenue Diagnostic — a 15-day, fixed-fee ($2,500) audit producing a ranked Revenue Leak Report and Priority Matrix.
 - System Architecture — a scoped build (typically $6,000–$14,000) that installs the pricing, booking, and partnership systems identified in the Diagnostic.
-- Ongoing Partnership — a monthly retainer (from $2,500/month) that runs the live systems and compounds gains over time.
+- Ongoing Partnership — a monthly retainer (from $2,500/month on the Path, $4,999/month on the committed Partnership) that runs the live systems and compounds gains over time.
 
 ## Pages
 

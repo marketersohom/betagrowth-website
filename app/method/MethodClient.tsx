@@ -91,7 +91,7 @@ const phases: Phase[] = [
     duration: "Monthly",
     tagline: "We stay in and run the systems with you, so the gains compound instead of decaying the moment we would otherwise walk out the door.",
     description: "Built systems decay without an owner. Prices drift back, staff slip to old habits, the partnerships you activated go quiet. Ongoing Partnership keeps that from happening. We stay embedded and accountable for the numbers, reviewing conversion, average spend, repeat rate, and review velocity every week, and running a full performance deep-dive every quarter. You also keep access to everything in your Priority Matrix that was not built in Phase 2, so the next tier of gains keeps arriving. This is priced against the revenue your systems protect and compound, not against hours on a clock.",
-    fee: "From $2,500/month, scoped to systems under management. Minimum term: 3 months on the sequential path, 9 months on the committed partnership.",
+    fee: "From $2,500/month on the Path, $4,999/month on the committed Partnership, scoped to systems under management. Minimum term: 3 months on the sequential path, 9 months on the committed partnership.",
     deliverables: [
       "Weekly metric tracking and iteration",
       "Hands-on ownership of the live systems",
