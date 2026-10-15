@@ -44,12 +44,22 @@ const serviceSchema = {
       provider: { "@type": "Organization", name: "Generation Beta" },
       areaServed: "Southeast Asia",
       description: "Monthly embedded execution and quarterly performance reviews for systems already under management.",
-      offers: {
-        "@type": "Offer",
-        price: "2500",
-        priceCurrency: "USD",
-        unitText: "per month",
-      },
+      offers: [
+        {
+          "@type": "Offer",
+          name: "The Path (sequential engagement)",
+          price: "2500",
+          priceCurrency: "USD",
+          unitText: "per month",
+        },
+        {
+          "@type": "Offer",
+          name: "The Partnership (committed 9-month engagement)",
+          price: "4999",
+          priceCurrency: "USD",
+          unitText: "per month",
+        },
+      ],
     },
   ],
 };
