@@ -25,6 +25,13 @@ const retreatStats = [
   { value: 4, suffix: " of 6", label: "Recommendations live", period: "Within 90 days" },
 ];
 
+const peptideStats = [
+  { value: 86, suffix: "%", label: "Enquiries", period: "First 12 months" },
+  { value: 39, suffix: "%", label: "Enquiry-to-purchase rate", period: "First 12 months" },
+  { value: 90, suffix: "%", label: "Average order value", period: "First 12 months" },
+  { value: 58.78, suffix: "%", label: "Average customer LTV", period: "First 12 months" },
+];
+
 export default function WorkClient() {
   return (
     <main className="pt-20">
@@ -60,7 +67,7 @@ export default function WorkClient() {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="font-body text-cream/60 text-lg leading-relaxed max-w-2xl"
         >
-          Hospitality growth case studies with real numbers. A luxury spa revenue case study from Phuket, an executive coaching positioning engagement, and a wellness retreat diagnostic in India, all from live revenue architecture engagements.
+          Hospitality growth case studies with real numbers. A luxury spa revenue case study from Phuket, an executive coaching positioning engagement, a wellness retreat diagnostic in India, and a 12-month growth partnership with a UK research peptide brand, all from live revenue architecture engagements.
         </motion.p>
       </section>
 
@@ -404,6 +411,128 @@ export default function WorkClient() {
                 <div>
                   <p className="font-body text-cream text-sm font-medium">Managing Director</p>
                   <p className="font-body text-cream/40 text-xs">Boutique health &amp; wellness retreat group, India</p>
+                </div>
+              </div>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Research peptide brand */}
+      <section id="peptide-brand" className="border-t border-gold/10 bg-plum-mid/10">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-24 lg:py-28">
+          <div className="grid lg:grid-cols-12 gap-12 mb-16">
+            <ScrollReveal className="lg:col-span-7">
+              <div className="flex items-center gap-3 mb-5">
+                <span className="font-body text-xs text-cream/40 tracking-[0.15em] uppercase">Case Study 04</span>
+                <div className="h-px flex-1 max-w-[3rem] bg-gold/20" />
+              </div>
+              <h2
+                className="font-display text-cream leading-tight mb-4"
+                style={{ fontSize: "clamp(2rem, 4vw, 3.5rem)" }}
+              >
+                Research Peptide Brand, UK
+              </h2>
+              <div className="flex flex-wrap gap-2 mb-6">
+                {["Wellness", "UK to Europe, US & SEA", "Brand Authority", "Growth Partnership"].map((tag) => (
+                  <span key={tag} className="font-body text-xs text-cream/40 border border-cream/10 px-3 py-1">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              <p className="font-body text-cream/60 text-sm leading-relaxed">
+                A single-brand research peptide distributor in the United Kingdom, selling individual peptides and stacks to buyers mostly across Europe, the US, and Southeast Asia. Peptides are a regulated category, the rules differ from country to country, and in some markets they are banned outright. The business had full legal paperwork, a large inventory, and a word-of-mouth customer base. The problem was invisible: to search engines and first-time visitors abroad, the brand looked no different from a bot or a scam. Their previous agency pushed Meta and Google ads, the accounts were banned three times in the first month, and the inventory sat unsold.
+              </p>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.15} className="lg:col-span-5">
+              <div className="border border-gold/20 p-6 bg-plum-mid/20">
+                <p className="font-body text-xs text-gold tracking-[0.15em] uppercase mb-6">Engagement scope</p>
+                <ul className="space-y-3">
+                  {[
+                    "Brand & Seller Persona Build",
+                    "Website & Messaging Rebuild",
+                    "Offer Architecture Redesign",
+                    "Customer Journey & Operating System",
+                    "AI Chat, Service Layer & Staff Training",
+                    "Community & Partnership Channels",
+                  ].map((item) => (
+                    <li key={item} className="flex items-center gap-3">
+                      <div className="w-1 h-1 rounded-full bg-gold flex-shrink-0" />
+                      <span className="font-body text-sm text-cream/65">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </ScrollReveal>
+          </div>
+
+          {/* Stats */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-6 max-w-4xl">
+            {peptideStats.map((stat, i) => (
+              <ScrollReveal key={`${stat.label}-${stat.period}`} delay={i * 0.08}>
+                <div className="border-t border-gold/20 pt-4">
+                  <div className="font-display text-gold leading-none mb-2" style={{ fontSize: "clamp(2rem, 3.5vw, 3rem)" }}>
+                    {stat.suffix === "%" && <span className="text-2xl align-top mt-1 inline-block">+</span>}
+                    <CountUp
+                      end={stat.value}
+                      suffix={stat.suffix !== "%" ? stat.suffix : ""}
+                      decimals={stat.value % 1 !== 0 ? 2 : 0}
+                    />
+                    {stat.suffix === "%" && "%"}
+                  </div>
+                  <p className="font-body text-cream text-sm">{stat.label}</p>
+                  <p className="font-body text-cream/40 text-xs">{stat.period}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+          <ScrollReveal className="mb-4">
+            <p className="font-body text-cream/70 text-base leading-relaxed max-w-3xl">
+              Through our 12-month growth partnership with a UK research peptide brand, we closed the trust gap across earned, owned, and paid channels to drive an 86% increase in enquiries, a 39% lift in enquiry-to-purchase rate, a 90% increase in average order value, and a 58.78% increase in average customer lifetime value.
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal>
+            <p className="font-body text-cream/45 text-xs italic max-w-2xl mb-16 leading-relaxed">
+              12-month growth partnership, followed by a 4-month handover: hiring, training, and sign-off of the client&apos;s in-house team.
+            </p>
+          </ScrollReveal>
+
+          {/* Story */}
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-24">
+            <ScrollReveal>
+              <h3 className="font-display text-cream text-2xl font-light mb-4">The trust problem</h3>
+              <p className="font-body text-cream/55 text-sm leading-relaxed mb-4">
+                The paperwork was in order, but none of it showed where it mattered. Visitors from other countries could not tell the website apart from a bot or a scam, and search engines had no signals that the business was real. In a regulatory grey area, a site with no personality and no targeted outreach sits like a brochure, and that is what it had become.
+              </p>
+              <p className="font-body text-cream/55 text-sm leading-relaxed">
+                The offer made it harder. Stacks were organised by product and price rather than by what the buyer was trying to achieve, so even interested visitors had to work out what to buy on their own. Paid ads were never going to fix a trust gap, and three banned accounts in the first month proved it.
+              </p>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.12}>
+              <h3 className="font-display text-cream text-2xl font-light mb-4">The rebuild</h3>
+              <p className="font-body text-cream/55 text-sm leading-relaxed mb-4">
+                We built the brand and a seller persona, rebuilt the website and messaging to answer every pain point the ideal customer might have, and established full-cycle authority across earned, owned, and paid channels. Stacks were remodelled around buyer goals rather than product and price. We mapped the customer journey, then built and installed the operating system to run it, with contingencies.
+              </p>
+              <p className="font-body text-cream/55 text-sm leading-relaxed">
+                To close the trust gap in the last mile, we added AI chat with a human oversight layer, built a customer service layer, and trained the service staff to build trust in every conversation. A customer community and partnership channels gave the brand reach that did not depend on ad platforms. After the 12 months, we spent four more helping them hire an in-house team, trained it to manage the architecture, and signed off.
+              </p>
+            </ScrollReveal>
+          </div>
+
+          {/* Testimonial */}
+          <ScrollReveal className="mt-16 border-t border-gold/10 pt-12">
+            <div className="max-w-2xl">
+              <blockquote className="font-display text-cream italic text-xl lg:text-2xl font-light leading-relaxed mb-6">
+                &ldquo;It was a unique journey. Not everyone understands the complexity of building a peptide brand, but Generation Beta did, and we are ever so thankful to them.&rdquo;
+              </blockquote>
+              <div className="flex items-center gap-4">
+                <div className="w-8 h-px bg-gold" />
+                <div>
+                  <p className="font-body text-cream text-sm font-medium">Founder</p>
+                  <p className="font-body text-cream/40 text-xs">Research peptide brand, UK</p>
                 </div>
               </div>
             </div>
