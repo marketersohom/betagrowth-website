@@ -113,6 +113,7 @@ export default function WorkClient() {
                     "Partnership Program Build",
                     "Google Reputation Recovery",
                     "Staff Upsell Training",
+                    "Go-to-Market for a Location Relaunch",
                   ].map((item) => (
                     <li key={item} className="flex items-center gap-3">
                       <div className="w-1 h-1 rounded-full bg-gold flex-shrink-0" />
@@ -189,6 +190,89 @@ export default function WorkClient() {
               </div>
             </div>
           </ScrollReveal>
+
+          {/* Phase 2: go-to-market */}
+          <div id="spa-gtm" className="mt-24 border-t border-gold/10 pt-16 scroll-mt-24">
+            <div className="grid lg:grid-cols-12 gap-12 mb-14">
+              <ScrollReveal className="lg:col-span-7">
+                <div className="flex items-center gap-3 mb-5">
+                  <span className="font-body text-xs text-cream/40 tracking-[0.15em] uppercase">Phase 2 · Mid-2026</span>
+                  <div className="h-px flex-1 max-w-[3rem] bg-gold/20" />
+                </div>
+                <h3
+                  className="font-display text-cream leading-tight mb-4"
+                  style={{ fontSize: "clamp(1.75rem, 3vw, 2.6rem)" }}
+                >
+                  Go-to-market for a relaunched location
+                </h3>
+                <p className="font-body text-gold/80 text-sm tracking-wide mb-5">
+                  We chaired the rebrand and full commercial launch of an existing location as an organic spa and hydrotherapy concept.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {["Go-to-Market", "Rebrand & Relaunch", "Hydrotherapy", "Phuket, Thailand"].map((tag) => (
+                    <span key={tag} className="font-body text-xs text-cream/40 border border-cream/10 px-3 py-1">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <p className="font-body text-cream/60 text-sm leading-relaxed mb-4">
+                  In mid-2026, one of the group&apos;s existing Phuket locations was relaunched as an organic spa and hydrotherapy concept. The brief covered more than positioning: the location needed a complete go-to-market spanning brand, marketing, operations, customer experience, service delivery, construction coordination, and launch execution.
+                </p>
+                <p className="font-body text-cream/60 text-sm leading-relaxed">
+                  We chaired the go-to-market, directly managing or overseeing marketing, operations alignment, customer experience design, service standards, construction coordination for the hydrotherapy introduction, and the launch itself.
+                </p>
+              </ScrollReveal>
+
+              <ScrollReveal delay={0.15} className="lg:col-span-5">
+                <div className="border border-gold/20 p-6 bg-plum-mid/20">
+                  <p className="font-body text-xs text-gold tracking-[0.15em] uppercase mb-6">Parties involved</p>
+                  <ul className="space-y-3">
+                    {[
+                      "On-site team and group management",
+                      "Construction and fit-out parties for the hydrotherapy introduction",
+                      "Nearby hotel and residential partners",
+                    ].map((item) => (
+                      <li key={item} className="flex items-start gap-3">
+                        <div className="w-1 h-1 rounded-full bg-gold flex-shrink-0 mt-2" />
+                        <span className="font-body text-sm text-cream/65">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </ScrollReveal>
+            </div>
+
+            {/* GTM scope */}
+            <ScrollReveal className="mb-6">
+              <p className="font-body text-xs text-gold tracking-[0.15em] uppercase">GTM scope</p>
+            </ScrollReveal>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-8 mb-14">
+              {[
+                ["Brand and positioning", "Defined the organic spa and hydrotherapy identity, and how it would be communicated to guests and partners."],
+                ["Marketing", "Built the guest-facing messaging, offer structure, and channel approach for the relaunch."],
+                ["Operations and service", "Aligned day-to-day operations and service standards with the new brand promise."],
+                ["Customer experience", "Designed the guest journey from enquiry through visit to match the new positioning."],
+                ["Construction coordination", "Managed the interface between the physical introduction of hydrotherapy facilities and the commercial timeline."],
+                ["Partnership activation", "Created the partner-facing explanation and process for nearby hotels and residential accounts."],
+                ["Launch execution", "Coordinated the internal and external steps required to open the relaunched concept."],
+              ].map(([title, detail], i) => (
+                <ScrollReveal key={title} delay={(i % 3) * 0.08}>
+                  <div className="border-t border-gold/20 pt-4">
+                    <p className="font-display text-gold text-lg mb-1">{String(i + 1).padStart(2, "0")}</p>
+                    <p className="font-body text-cream text-sm font-medium mb-2">{title}</p>
+                    <p className="font-body text-cream/55 text-sm leading-relaxed">{detail}</p>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
+
+            <ScrollReveal>
+              <h4 className="font-display text-cream text-2xl font-light mb-4">The outcome</h4>
+              <p className="font-body text-cream/70 text-base leading-relaxed max-w-3xl">
+                The location relaunched in mid-2026 as an organic spa and hydrotherapy concept under a single go-to-market plan covering brand, marketing, operations, customer experience, service, construction coordination, and launch. The on-site team received a coherent commercial and operational framework to run after opening. The launch ran without a large external media campaign.
+              </p>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 
