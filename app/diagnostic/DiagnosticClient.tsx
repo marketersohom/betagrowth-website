@@ -47,7 +47,7 @@ const deliverables = [
 const whoItIsFor = [
   "Hospitality businesses doing $500K to $10M USD annually",
   "Wellness and spa operators with 3 or more staff",
-  "Professional service firms with existing client base",
+  "Executive coaches with an existing client base",
   "Businesses that have plateaued in revenue despite high utilization",
   "Owners who suspect they are underpriced but lack the data to act",
   "Operations with booking or conversion friction they cannot diagnose",

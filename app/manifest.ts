@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Generation Beta",
     short_name: "Gen Beta",
     description:
-      "Revenue Leak Architecture for hospitality, wellness, and professional services.",
+      "Revenue Leak Architecture for hospitality, healthcare & wellness, and executive coaching.",
     start_url: "/",
     display: "standalone",
     background_color: "#0d0112",

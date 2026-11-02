@@ -38,7 +38,7 @@ export default function Footer() {
               <span className="font-display text-cream text-lg font-medium">Generation Beta</span>
             </div>
             <p className="font-body text-sm text-cream/50 leading-relaxed max-w-xs">
-              Growth marketing and Revenue Leak Architecture for hospitality, wellness, and professional services. Operating out of Bangkok, serving clients across Southeast Asia — including Thailand, Singapore, and Indonesia.
+              Growth marketing and Revenue Leak Architecture for hospitality, healthcare & wellness, and executive coaching. Operating out of Bangkok, serving clients across Southeast Asia — including Thailand, Singapore, and Indonesia.
             </p>
             <div className="mt-6 h-px w-12 bg-gold/40" />
           </div>

@@ -205,8 +205,7 @@ export default function FrameworkClient() {
             >
               Revenue Leak Architecture is the hotel revenue audit framework we
               use to find the structural gaps that drain 20 to 40 percent of
-              potential revenue from hospitality, wellness, and professional
-              services businesses, then rebuild the systems that close them.
+              potential revenue from hospitality, healthcare & wellness, and executive coaching businesses, then rebuild the systems that close them.
             </motion.p>
 
             <motion.div
@@ -389,7 +388,7 @@ export default function FrameworkClient() {
           Source: Generation Beta, Ghost-Shop &amp; Revenue Diagnostic Study,
           Bangkok, 2024–2026. Findings based on structured wellness
           mystery-shopping audits and hotel revenue audits across hospitality,
-          wellness, and professional services in Thailand, Singapore, and
+          healthcare & wellness, and executive coaching in Thailand, Singapore, and
           Indonesia. Delivery & Execution
           has no research backing yet and is shown without a stat until a
           dedicated audit pass covers it.
@@ -561,8 +560,7 @@ export default function FrameworkClient() {
             </h2>
             <p className="font-body text-cream/60 leading-relaxed max-w-2xl text-lg">
               The framework comes out of direct operator work and structured
-              ghost-shopping across hospitality, wellness, and professional
-              services in Southeast Asia, including Thailand, Singapore, and
+              ghost-shopping across hospitality, healthcare & wellness, and executive coaching in Southeast Asia, including Thailand, Singapore, and
               Indonesia. In one engagement with a premium spa and hydrotherapy group in Phuket, closing these
               leaks drove a 46% increase in year-over-year revenue in Year 1,
               compounding to 84% in Year 2.

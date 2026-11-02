@@ -27,11 +27,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Generation Beta | Revenue Growth Partners",
-  description: "Growth marketing and revenue architecture agency operating out of Bangkok, serving hospitality, wellness, and professional services across Southeast Asia — including Thailand, Singapore, and Indonesia.",
+  description: "Growth marketing and revenue architecture agency operating out of Bangkok, serving hospitality, healthcare & wellness, and executive coaching across Southeast Asia — including Thailand, Singapore, and Indonesia.",
   keywords: "revenue growth, growth marketing agency, business consulting, hospitality consulting, wellness marketing, diagnostic audit, Bangkok, Southeast Asia, Thailand, Singapore, Indonesia",
   openGraph: {
     title: "Generation Beta | Revenue Growth Partners",
-    description: "Growth marketing and revenue architecture agency operating out of Bangkok, serving hospitality, wellness, and professional services across Southeast Asia.",
+    description: "Growth marketing and revenue architecture agency operating out of Bangkok, serving hospitality, healthcare & wellness, and executive coaching across Southeast Asia.",
     siteName: "Generation Beta",
   },
 };

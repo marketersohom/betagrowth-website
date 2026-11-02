@@ -11,16 +11,12 @@ const sectors = [
     description: "Hotels, resorts, and boutique properties across Southeast Asia. Active engagements in spa and wellness operations within the sector. Accepting boutique hotel and resort engagements through 2026.",
   },
   {
-    name: "Wellness & Spa",
-    description: "Day spas, wellness centers, and therapeutic practices. Booking systems, pricing structure, and client retention.",
+    name: "Healthcare & Wellness",
+    description: "Healthcare and wellness providers, day spas, wellness centers, retreats, and therapeutic practices. Booking systems, pricing structure, trust, and client retention.",
   },
   {
-    name: "Professional Services",
-    description: "Consultants, coaches, and advisors building authority-based practices. Positioning, offer architecture, and client acquisition.",
-  },
-  {
-    name: "F&B",
-    description: "Independent restaurants and beverage brands. We are actively expanding into this sector and accepting select engagements through 2026.",
+    name: "Executive Coaching",
+    description: "Executive coaches and coaching practices building authority-based businesses. Positioning, offer architecture, and client acquisition.",
   },
 ];
 
@@ -98,7 +94,7 @@ export default function AboutClient() {
                 Written by Sohom Mukherjee · Last updated July 30, 2026
               </p>
               <p className="font-body text-cream/70 text-base leading-relaxed">
-                Founded in Bangkok, Generation Beta is a specialized regional marketing architecture agency and commercial revenue consultancy — the growth division of Digital Zen Group Co., Ltd. — operating across Southeast Asia, including Thailand, Singapore, and Indonesia. As hospitality growth consultants and boutique hotel revenue experts, the firm diagnoses and repairs structural revenue leaks in the hospitality, premium wellness, and professional services sectors through its proprietary Revenue Leak Architecture methodology. By rebuilding pricing architecture, eliminating booking friction, and engineering conversion infrastructure, Generation Beta designs and installs sustainable, data-driven revenue systems for regional operators. The firm is founder-led by Sohom Mukherjee and works with a limited number of clients at any one time to preserve engagement depth.
+                Founded in Bangkok, Generation Beta is a specialized regional marketing architecture agency and commercial revenue consultancy — the growth division of Digital Zen Group Co., Ltd. — operating across Southeast Asia, including Thailand, Singapore, and Indonesia. As hospitality growth consultants and boutique hotel revenue experts, the firm diagnoses and repairs structural revenue leaks in the hospitality, healthcare & wellness, and executive coaching sectors through its proprietary Revenue Leak Architecture methodology. By rebuilding pricing architecture, eliminating booking friction, and engineering conversion infrastructure, Generation Beta designs and installs sustainable, data-driven revenue systems for regional operators. The firm is founder-led by Sohom Mukherjee and works with a limited number of clients at any one time to preserve engagement depth.
               </p>
             </div>
           </ScrollReveal>
@@ -151,7 +147,7 @@ export default function AboutClient() {
                   I started Generation Beta because I kept seeing the same problem across every business I worked with in Southeast Asia: strong operations, loyal customers, and completely preventable revenue loss. The cause was always structural. Pricing set by intuition rather than data. Booking systems that frustrated customers before they arrived. Online presence that undersold what was actually being delivered.
                 </p>
                 <p>
-                  I have spent the past eight years working with hospitality, wellness, and professional service businesses across Thailand, Singapore, and Indonesia. The pattern is consistent regardless of size or sector: most revenue problems are not marketing problems. They are architecture problems.
+                  I have spent the past eight years working with hospitality, healthcare & wellness, and executive coaching businesses across Thailand, Singapore, and Indonesia. The pattern is consistent regardless of size or sector: most revenue problems are not marketing problems. They are architecture problems.
                 </p>
                 <p>
                   Generation Beta was built to solve exactly this. The Diagnostic methodology came from hundreds of audits distilled into the 14 fields, across six categories, that account for the vast majority of preventable revenue loss. The Method is how we build the systems that fix what we find.
@@ -186,6 +182,83 @@ export default function AboutClient() {
         </div>
       </section>
 
+      {/* Team */}
+      <section id="team" className="border-t border-gold/10 bg-plum-mid/10">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-24 lg:py-28">
+          <ScrollReveal className="mb-14 max-w-3xl">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="h-px w-8 bg-gold" />
+              <span className="font-body text-gold text-xs tracking-[0.2em] uppercase">
+                Team
+              </span>
+            </div>
+            <h2
+              className="font-display text-cream leading-[1.05] mb-6"
+              style={{ fontSize: "clamp(2rem, 4vw, 3.2rem)" }}
+            >
+              Who does the work.
+            </h2>
+            <p className="font-body text-cream/60 text-base leading-relaxed">
+              Strategy and client leadership sit with Sohom. Delivery is handled by a long-standing team and specialist partners.
+            </p>
+          </ScrollReveal>
+
+          <div className="grid lg:grid-cols-3 gap-10 lg:gap-12">
+            <ScrollReveal delay={0}>
+              <div className="border-t border-gold/20 pt-5 h-full">
+                <h3 className="font-display text-cream text-xl font-light mb-3">Core delivery (India)</h3>
+                <p className="font-body text-cream/55 text-sm leading-relaxed mb-5">
+                  A full team based in India covers website design and development, social media, search optimization, copywriting, graphic design, and AI and automation. The team includes dedicated copywriters as well as specialists in AI-enabled technology and automation. Most have worked with Sohom across previous ventures for over a decade.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["Web Design & Development", "Social Media", "Search Optimization", "Copywriting", "Graphic Design", "AI & Automation"].map((skill) => (
+                    <span key={skill} className="font-body text-xs text-cream/40 border border-cream/10 px-3 py-1">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.1}>
+              <div className="border-t border-gold/20 pt-5 h-full">
+                <h3 className="font-display text-cream text-xl font-light mb-3">Thailand &amp; production</h3>
+                <ul className="space-y-4">
+                  {[
+                    "Visual production (photography, video, editing, animation) for Thailand-based work is led by Helgi Oskarsson.",
+                    "Two on-ground representatives in Phuket: one handles coordination; the other specializes in partnership development for the tourism and hospitality industry.",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <div className="w-1 h-1 rounded-full bg-gold flex-shrink-0 mt-2" />
+                      <span className="font-body text-cream/55 text-sm leading-relaxed">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.2}>
+              <div className="border-t border-gold/20 pt-5 h-full">
+                <h3 className="font-display text-cream text-xl font-light mb-3">Field support</h3>
+                <p className="font-body text-cream/55 text-sm leading-relaxed">
+                  Ghost shoppers are used in multiple markets as part of the{" "}
+                  <Link href="/revenue-leak-architecture" className="text-cream/80 border-b border-gold/40 hover:text-gold transition-colors duration-200">
+                    Revenue Leak Architecture
+                  </Link>{" "}
+                  diagnostic process.
+                </p>
+              </div>
+            </ScrollReveal>
+          </div>
+
+          <ScrollReveal className="mt-14">
+            <p className="font-body text-cream/45 text-sm leading-relaxed max-w-3xl border-l-2 border-gold/40 pl-5">
+              Sohom is based between Thailand and India and travels as required. The delivery structure remains consistent regardless of location.
+            </p>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* Sectors */}
       <section className="border-t border-gold/10 bg-plum-deep/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-24 lg:py-28">
@@ -204,7 +277,7 @@ export default function AboutClient() {
             </h2>
           </ScrollReveal>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {sectors.map((sector, i) => (
               <ScrollReveal key={sector.name} delay={i * 0.1}>
                 <div className="border-t border-gold/20 pt-5 h-full">

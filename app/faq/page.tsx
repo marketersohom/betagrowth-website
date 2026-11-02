@@ -15,7 +15,7 @@ const faqs = [
   {
     question: "Who is Sohom Mukherjee?",
     answer:
-      "Sohom Mukherjee is a hospitality and wellness revenue growth consultant based in Bangkok, Thailand, and the founder of Generation Beta. Over the past eight years he has run hundreds of revenue audits across hospitality, wellness, and professional services businesses in Thailand, Singapore, and Indonesia.",
+      "Sohom Mukherjee is a hospitality and wellness revenue growth consultant based in Bangkok, Thailand, and the founder of Generation Beta. Over the past eight years he has run hundreds of revenue audits across hospitality, healthcare & wellness, and executive coaching businesses in Thailand, Singapore, and Indonesia.",
   },
   {
     question: "Where is Generation Beta based?",

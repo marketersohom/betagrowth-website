@@ -8,7 +8,7 @@ const schema = {
   image: "https://betagrowthpartners.com/logo.png",
   email: "sohom@betagrowthpartners.com",
   description:
-    "Generation Beta is a growth marketing and revenue architecture agency operating out of Bangkok, serving hospitality, wellness, and premium professional services businesses across Southeast Asia — including Thailand, Singapore, and Indonesia. We specialize in Revenue Leak Architecture: locating structural revenue loss in pricing, booking conversion, and online reputation, then designing and installing the systems that stop it.",
+    "Generation Beta is a growth marketing and revenue architecture agency operating out of Bangkok, serving hospitality, healthcare & wellness, and executive coaching businesses across Southeast Asia — including Thailand, Singapore, and Indonesia. We specialize in Revenue Leak Architecture: locating structural revenue loss in pricing, booking conversion, and online reputation, then designing and installing the systems that stop it.",
   address: {
     "@type": "PostalAddress",
     streetAddress: "723 Teo Hong Silom Building, Si Lom Rd, Silom, Bang Rak",
