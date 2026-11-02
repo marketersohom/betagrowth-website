@@ -159,7 +159,7 @@ export default function AboutClient() {
               <div className="mt-8 flex flex-wrap gap-6">
                 <div>
                   <p className="font-body text-xs text-gold tracking-[0.15em] uppercase mb-1">Location</p>
-                  <p className="font-body text-sm text-cream/70">Bangkok, Thailand</p>
+                  <p className="font-body text-sm text-cream/70">Thailand &amp; India</p>
                 </div>
                 <div>
                   <p className="font-body text-xs text-gold tracking-[0.15em] uppercase mb-1">Languages</p>
